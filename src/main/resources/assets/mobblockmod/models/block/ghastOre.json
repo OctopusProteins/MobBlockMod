@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"up": "MobBlockMod:blocks/ghastOre_0",
+		"down": "MobBlockMod:blocks/ghastOre_0",
+		"north": "MobBlockMod:blocks/ghastOre_2",
+		"west": "MobBlockMod:blocks/ghastOre_2",
+		"east": "MobBlockMod:blocks/ghastOre_2",
+		"south": "MobBlockMod:blocks/ghastOre_2",
+		"particle": "MobBlockMod:blocks/ghastOre_2"
+	}
+}

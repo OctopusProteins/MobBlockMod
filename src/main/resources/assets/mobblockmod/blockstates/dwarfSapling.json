@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "stage=0": { "model": "MobBlockMod:dwarfSapling" },
+        "stage=1": { "model": "MobBlockMod:dwarfSapling" }
+    }
+}

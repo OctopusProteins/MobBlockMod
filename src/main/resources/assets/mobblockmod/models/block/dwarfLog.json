@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"down": "MobBlockMod:blocks/log_dwarf_top",
+		"up": "MobBlockMod:blocks/log_dwarf_top",
+		"north": "MobBlockMod:blocks/log_dwarf",
+		"east": "MobBlockMod:blocks/log_dwarf",
+		"west": "MobBlockMod:blocks/log_dwarf",
+		"south": "MobBlockMod:blocks/log_dwarf",
+		"particle": "MobBlockMod:blocks/log_dwarf"
+	}
+}
