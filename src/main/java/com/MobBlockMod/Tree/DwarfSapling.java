@@ -81,6 +81,7 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 		this.checkAndDropBlock(worldIn, pos, state);
 	}
 	
+	@SuppressWarnings("unlikely-arg-type")
 	public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state)
     {
 		IBlockState soil = worldIn.getBlockState(pos.down());
