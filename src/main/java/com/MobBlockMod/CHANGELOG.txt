@@ -1,0 +1,94 @@
+1.0 - 2.4
+*********************************
+DEPRECATED
+JAR DEPENDANT
+
+Added 1.7.10/1.7.2 blocks, items, bases
+*********************************
+2.4.1 - 2.5.1
+*********************************
+Fixed .jar dependencies
+Added mobs, trees, worldGen
+*********************************
+2.5.3
+*********************************
+Updated to Forge 1.8
+Removed saplings
+Updated author/credits information
+Fixed zombiePigmenOre texture
+Updated ZPO in en_lang
+Removed serial output for MBMWorldGen classes
+Cleaned up DwarfTree and PillarDwarfTree classes
+Added logs and leaves to en_lang
+*********************************
+2.5.4
+*********************************
+Moved nether mob blocks into nether worldGen
+Moved End mob blocks into end worldGen
+Updated some textures
+Added MBMWorldGenEndMinable class
+Changed Mushroom Mob spawn egg parameters
+Made tiny mob even tinier!!
+Evened out ore spawn rates
+Fixed shapeless recipes
+Fixed item texture glitches
+Updated naming scheme
+Updated en_lang
+*********************************
+2.5.8
+*********************************
+Replaced all block textures
+Updated to x32
+Changed MushroomMob behaviour
+Cleaned EntityMushroom class
+Added light levels to some blocks
+Added filler block for tab icon - tabBlock
+Added multiple textures to some blocks
+Added transparancy to some blocks
+    - Implement EnumWorldBlockLayer getBlockLayer() in Block
+    - Implement boolean isOpaqueCube() in Block
+Added saplings
+*********************************
+2.5.9
+*********************************
+Replaced all item textures
+Updated to x32
+Fixed leaves burning - FIRE RETARDANT!!!
+Added onSheared method
+*********************************
+
+PLANNED
+2.5.10
+*********************************
+Added new blocks for new 1.8 mobs
+Added new items/recipes for new 1.8 mobs
+Added texture/models for new 1.8 mobs
+*********************************
+2.5.11
+*********************************
+Update for 1.8.8
+*********************************
+2.5.12
+*********************************
+Update for 1.8.9
+*********************************
+2.6
+*********************************
+Update for 1.9
+Mobs, block, items, bases, etc.
+*********************************
+*********************************
+
+FUTURE
+*********************************
+Updates for 1.10, 1.11, 1.12, etc,
+New mobs
+Texture overhaul
+Sapling replacement??
+*********************************
+
+PT1
+-bigger veins
+-toughness
+-textures
+-

@@ -6,7 +6,7 @@ import java.util.Random;
 
 import com.MobBlockMod.Registry;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -25,7 +25,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class DwarfSapling extends Block implements IGrowable, IPlantable {
+public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 
 	public static final PropertyInteger STAGE = PropertyInteger.create("stage", 0, 1);
 	public static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
@@ -65,7 +65,7 @@ public class DwarfSapling extends Block implements IGrowable, IPlantable {
 		return super.canPlaceBlockAt(worldIn, pos) && SOIL.contains(worldIn.getBlockState(pos.down()).getBlock());
 	}
 	
-	private void checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
+	public void checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
     {
 		if (!this.canBlockStay(worldIn, pos, state))
         {
