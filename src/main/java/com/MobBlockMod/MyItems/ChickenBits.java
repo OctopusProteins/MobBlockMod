@@ -1,27 +1,29 @@
-package com.MobBlockMod.MyItems;//Change this
+package com.MobBlockMod.MyItems;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.YourModsName;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.util.IIcon;
 
-
-
-public class ChickenBits extends Item 
+public class ChickenBits extends Item
 {
-	private final String name = "chickenBits";
-	 //
-	public ChickenBits() 
+
+	@SideOnly(Side.CLIENT)
+	private IIcon[] icons;
+
+	public ChickenBits()
 	{
-		GameRegistry.registerItem(this, name);
-		setCreativeTab(Registry.mobBlockModTab);
-	    setUnlocalizedName(name);
-	    
+		this.setHasSubtypes(true);
+		this.setCreativeTab(CreativeTabs.tabMaterials);
 	}
-	        
-	public String getName()
+
+	@SideOnly(Side.CLIENT)
+	public void func_94581_a(IIconRegister par1IconRegister)
 	{
-		return name;
+		this.itemIcon = par1IconRegister.registerIcon(YourModsName.MODID + ":" + "chickenbit");
 	}
-	      
 }

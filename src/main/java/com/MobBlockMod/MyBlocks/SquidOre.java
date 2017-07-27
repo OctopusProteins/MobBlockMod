@@ -1,27 +1,20 @@
 package com.MobBlockMod.MyBlocks;
 
-import com.MobBlockMod.Registry;
+import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.world.World;
+
 
 public class SquidOre extends Block 
-{
-	private final String name = "squidOre";
-	
-	        public SquidOre() 
+	{
+
+	        public SquidOre (Material material) 
 	        {
-	                super(Material.ground);
-	                GameRegistry.registerBlock(this, name);
-	                setUnlocalizedName(name);
-	                setCreativeTab(Registry.mobBlockModTab);
-	                setHardness(1.8F);
-	      	        setStepSound(Block.soundTypeStone);
-	        }
-	        public String getName()
-	        {
-	        	return name;
+	                super(material);
 	        }
 
-}
+			
+
+	}

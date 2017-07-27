@@ -1,3 +1,5 @@
+//tile.hardDirt.name=Hard Dirt
+//tile.testBlock.name=Test Block
 //1.0
 tile.chickenOre.name=Chicken Block
 tile.cowOre.name=Cow Block
@@ -11,7 +13,6 @@ tile.spiderOre.name=Spider Block
 tile.wolfOre.name=Wolf Block
 tile.endermanOre.name=Enderman Block
 tile.villagerOre.name=Villager Block
-
 //1.1
 tile.ocelotOre.name=Ocelot Block
 tile.horseOre.name=Horse Block
@@ -27,7 +28,6 @@ tile.squidOre.name=Squid Block
 tile.cavespiderOre.name=Cave Spider Block
 tile.ghastOre.name=Ghast Block
 tile.silverfishOre.name=Silverfish Block
-
 
 
 //1.0
@@ -66,21 +66,21 @@ item.bushEgg.name=Bush Egg
 
 itemGroup.mobBlockModTab=Mob Block Mod
 
-item.woodPulp.name=Wood Pulp
-item.refinedPulp.name=Refined Pulp
-item.mushyPulp.name=Mushy Pulp
+tile.Log.Dwarf.name=Dwarf Log
+tile.Sapling.Dwarf.name=Dwarf Sapling
+
+item.woodpulp.name=Wood Pulp
+item.refinedpulp.name=Refined Pulp
+item.mushypulp.name=Mushy Pulp
 item.pulp.name=Pulp
 
-tile.dwarfLog.name=Dwarf Log
-tile.dwarfLeaf.name=Dwarf Leaves
-tile.dwarfSapling.name=Dwarf Sapling
-
-item.capMush.name=Cap Mush
-item.stemMush.name=Stem Mush
-item.capSlice.name=Cap Slice
-item.stemSlice.name=Stem Slice
-item.mushroomCap.name=Mushroom Cap
-item.mushroomStem.name=Mushroom Stem
-item.mushroomCompound.name=Mushroom Compound
+item.capmush.name=Cap Mush
+item.stemmush.name=Stem Mush
+item.capslice.name=Cap Slice
+item.stemslice.name=Stem Slice
+item.mushroomcap.name=Mushroom Cap
+item.mushroomstem.name=Mushroom Stem
+item.mushroomcompound.name=Mushroom Compound
+tile.leaf.Dwarf.name=Dwarf Leaves
 
 entity.Mushroom Mob.name=Mushroom Mob

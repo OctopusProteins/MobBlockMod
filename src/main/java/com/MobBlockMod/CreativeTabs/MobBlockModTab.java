@@ -1,22 +1,21 @@
 package com.MobBlockMod.CreativeTabs;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.MyCode;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 public class MobBlockModTab extends CreativeTabs {
 
 	public MobBlockModTab(int par1, String par2Str) {
-		super(par1, par2Str);		
+		super(par1, par2Str);
+		
 	}
 	
 	@Override
 	public Item getTabIconItem() 
 	{
-		ItemStack itemStack = new ItemStack(Registry.tabBlock);
-		return itemStack.getItem();
+		return MyCode.chickenBits;
 	}
 
 }

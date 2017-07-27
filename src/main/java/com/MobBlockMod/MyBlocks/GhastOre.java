@@ -1,27 +1,43 @@
 package com.MobBlockMod.MyBlocks;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.YourModsName;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 
 public class GhastOre extends Block 
-{
-	private final String name = "ghastOre";
-	
-	        public GhastOre() 
+	{
+	public static final String modid = YourModsName.MODID;
+			@SideOnly(Side.CLIENT)
+			private IIcon top;
+			@SideOnly(Side.CLIENT)
+			private IIcon bottom;
+	        private IIcon[] icons;
+	        
+	        @SideOnly(Side.CLIENT)
+	        public IIcon getIcon(int side, int p_149691_2_)
 	        {
-	                super(Material.ground);
-	                GameRegistry.registerBlock(this, name);
-	                setUnlocalizedName(name);
-	                setCreativeTab(Registry.mobBlockModTab);
-	                setHardness(1.8F);
-	      	        setStepSound(Block.soundTypeStone);
+	        return side == 1 || side == 0 ? this.top : (side == 1 ? this.bottom : this.blockIcon);
 	        }
-	        public String getName()
+	        
+	        @SideOnly(Side.CLIENT)
+	        public void registerBlockIcons(IIconRegister p_149651_1_)
 	        {
-	        	return name;
+	        this.blockIcon = p_149651_1_.registerIcon(modid + ":" + "ghaststone");
+	        this.top = p_149651_1_.registerIcon(modid + ":" + "ghaststone_1");
+	        this.bottom = p_149651_1_.registerIcon(modid + ":" + "ghaststone_0");
 	        }
 
-}
+			public GhastOre (Material material) 
+	        {
+	                super(material);
+	                this.setBlockTextureName(modid + ":" + "ghaststone");
+	        }
+
+
+	}
