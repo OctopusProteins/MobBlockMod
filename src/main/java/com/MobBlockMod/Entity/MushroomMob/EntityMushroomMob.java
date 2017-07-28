@@ -41,7 +41,9 @@ public class EntityMushroomMob extends EntityTameable{
 		
 		this.setTamed(false);
 		
-		((PathNavigateGround)this.getNavigator()).func_179690_a(true);
+		((PathNavigateGround)this.getNavigator()).setCanSwim(true);
+		((PathNavigateGround)this.getNavigator()).setEnterDoors(true);
+		
 	}
 	
 	public boolean isAIEnabled(){
