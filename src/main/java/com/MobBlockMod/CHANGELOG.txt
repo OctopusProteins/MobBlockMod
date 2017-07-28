@@ -68,13 +68,12 @@ Added texture/models for new 1.8 mobs
 Update for 1.8.8
 Added better PathNavigator methods
 *********************************
-
-PLANNED
-
 2.5.12
 *********************************
 Update for 1.8.9
 *********************************
+
+PLANNED
 2.6
 *********************************
 Update for 1.9
