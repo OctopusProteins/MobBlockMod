@@ -7,13 +7,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 
-public class BaseItem extends Item 
+public class EndermiteBits extends Item 
 {
-	private final String name = "name";
+	private final String name = "endermiteBits";
 	 
-	public BaseItem() 
+	public EndermiteBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		GameRegistry.registerItem(this, name);
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

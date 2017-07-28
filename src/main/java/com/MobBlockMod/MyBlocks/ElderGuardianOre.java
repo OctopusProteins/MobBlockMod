@@ -8,13 +8,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class BaseBlock extends Block 
+public class ElderGuardianOre extends Block 
 {
-	private final String name = "baseBlock";
+	private final String name = "elderguardianOre";
 	
-	        public BaseBlock() 
+	        public ElderGuardianOre() 
 	        {
 	                super(Material.ground);
+	                //change this at 1.11 update
 	                //GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);

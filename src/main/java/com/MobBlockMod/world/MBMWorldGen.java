@@ -38,6 +38,9 @@ public class MBMWorldGen implements IWorldGenerator{
 	private WorldGenerator cavespiderOre;
 	private WorldGenerator ghastOre;
 	private WorldGenerator silverfishOre;
+	private WorldGenerator endermiteOre;
+	private WorldGenerator guardianOre;
+	private WorldGenerator elderguardianOre;
 	
 	public MBMWorldGen() {
 		this.batOre = new MBMWorldGenMinable(Registry.batOre.getDefaultState(), 8);
@@ -61,8 +64,11 @@ public class MBMWorldGen implements IWorldGenerator{
 		this.squidOre = new MBMWorldGenMinable(Registry.squidOre.getDefaultState(), 7);
 		this.cavespiderOre = new MBMWorldGenMinable(Registry.cavespiderOre.getDefaultState(), 4);
 		this.silverfishOre = new MBMWorldGenMinable(Registry.silverfishOre.getDefaultState(), 5);
+		this.guardianOre = new MBMWorldGenMinable(Registry.guardianOre.getDefaultState(), 4);
+		//this.elderguardianOre = new MBMWorldGenMinable(Registry.elderguardianOre.getDefaultState(), 3);
 		
 		this.endermanOre = new MBMWorldGenEndMinable(Registry.endermanOre.getDefaultState(), 3);
+		this.endermiteOre = new MBMWorldGenEndMinable(Registry.endermiteOre.getDefaultState(), 6);
 		
 		this.ghastOre = new MBMWorldGenNetherMinable(Registry.ghastOre.getDefaultState(), 3);
 		this.zombiepigmenOre = new MBMWorldGenNetherMinable(Registry.zombiepigmenOre.getDefaultState(), 6);
@@ -97,6 +103,8 @@ public class MBMWorldGen implements IWorldGenerator{
 			this.runGenerator(squidOre, world, random, chunkX, chunkZ, 7, 0, 35);
 			this.runGenerator(cavespiderOre, world, random, chunkX, chunkZ, 4, 0, 35);
 			this.runGenerator(silverfishOre, world, random, chunkX, chunkZ, 5, 0, 35);
+			this.runGenerator(guardianOre, world, random, chunkX, chunkZ, 6, 0, 35);
+			this.runGenerator(elderguardianOre, world, random, chunkX, chunkZ, 4, 0, 35);
 			
 			break;
 		case -1: //nether
@@ -108,6 +116,7 @@ public class MBMWorldGen implements IWorldGenerator{
 		case 1: //end
 			
 			this.runGenerator(endermanOre, world, random, chunkX, chunkZ, 8, 8, 60); //bottom to top
+			this.runGenerator(endermiteOre, world, random, chunkX, chunkZ, 12, 8, 60);
 			break;
 		}
 		// TODO Auto-generated method stub
