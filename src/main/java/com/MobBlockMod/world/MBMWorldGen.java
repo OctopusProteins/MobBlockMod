@@ -104,7 +104,7 @@ public class MBMWorldGen implements IWorldGenerator{
 			this.runGenerator(cavespiderOre, world, random, chunkX, chunkZ, 4, 0, 35);
 			this.runGenerator(silverfishOre, world, random, chunkX, chunkZ, 5, 0, 35);
 			this.runGenerator(guardianOre, world, random, chunkX, chunkZ, 6, 0, 35);
-			this.runGenerator(elderguardianOre, world, random, chunkX, chunkZ, 4, 0, 35);
+			//this.runGenerator(elderguardianOre, world, random, chunkX, chunkZ, 4, 0, 35);
 			
 			break;
 		case -1: //nether
