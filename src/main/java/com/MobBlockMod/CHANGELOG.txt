@@ -63,12 +63,14 @@ Added new blocks for new 1.8 mobs
 Added new items/recipes for new 1.8 mobs
 Added texture/models for new 1.8 mobs
 *********************************
-
-PLANNED
 2.5.11
 *********************************
 Update for 1.8.8
+Added better PathNavigator methods
 *********************************
+
+PLANNED
+
 2.5.12
 *********************************
 Update for 1.8.9
