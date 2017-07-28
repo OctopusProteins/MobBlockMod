@@ -55,6 +55,7 @@ Replaced all item textures
 Updated to x32
 Fixed leaves burning - FIRE RETARDANT!!!
 Added onSheared method
+Replaced two block textures
 *********************************
 
 PLANNED
