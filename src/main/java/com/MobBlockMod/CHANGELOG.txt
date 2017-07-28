@@ -57,14 +57,14 @@ Fixed leaves burning - FIRE RETARDANT!!!
 Added onSheared method
 Replaced two block textures
 *********************************
-
-PLANNED
 2.5.10
 *********************************
 Added new blocks for new 1.8 mobs
 Added new items/recipes for new 1.8 mobs
 Added texture/models for new 1.8 mobs
 *********************************
+
+PLANNED
 2.5.11
 *********************************
 Update for 1.8.8

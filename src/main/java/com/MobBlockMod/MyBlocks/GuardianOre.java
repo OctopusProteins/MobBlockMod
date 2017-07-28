@@ -8,14 +8,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class BaseBlock extends Block 
+public class GuardianOre extends Block 
 {
-	private final String name = "baseBlock";
+	private final String name = "guardianOre";
 	
-	        public BaseBlock() 
+	        public GuardianOre() 
 	        {
 	                super(Material.ground);
-	                //GameRegistry.registerBlock(this, name);
+	                GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);

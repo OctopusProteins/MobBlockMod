@@ -47,6 +47,10 @@ public class Registry {
 	public static Block cavespiderOre;
 	public static Block ghastOre;
 	public static Block silverfishOre;
+	public static Block endermiteOre;
+	public static Block guardianOre;
+	public static Block elderguardianOre;
+	//elder guardian implemented, not used until 1.11
 	
 	public static Block dwarfLog;
 	public static Block dwarfLeaf;
@@ -81,6 +85,10 @@ public class Registry {
 	public static Item cavespiderBits;
 	public static Item ghastBits;
 	public static Item silverfishBits;
+	public static Item endermiteBits;
+	public static Item guardianBits;
+	public static Item elderguardianBits;
+	//elder guardian implemented, not used until 1.11
 	
 	public static Item bushMush;
 	public static Item grassShreds;
@@ -126,6 +134,9 @@ public class Registry {
 	    cavespiderOre = new CaveSpiderOre();
 	    ghastOre = new GhastOre();	    
 	    silverfishOre = new SilverfishOre();
+	    endermiteOre = new EndermiteOre();
+	    guardianOre = new GuardianOre();
+	    elderguardianOre = new ElderGuardianOre();
 	    
 	    dwarfLog = new DwarfLog();
 	    dwarfLeaf = new DwarfLeaf();
@@ -163,6 +174,9 @@ public class Registry {
 		renderItem.register(Item.getItemFromBlock(wolfOre), 0, new ModelResourceLocation(modid + ":" + ((WolfOre) wolfOre).getName(), "inventory"));
 		renderItem.register(Item.getItemFromBlock(zombieOre), 0, new ModelResourceLocation(modid + ":" + ((ZombieOre) zombieOre).getName(), "inventory"));
 		renderItem.register(Item.getItemFromBlock(zombiepigmenOre), 0, new ModelResourceLocation(modid + ":" + ((ZombiePigmenOre) zombiepigmenOre).getName(), "inventory"));
+		renderItem.register(Item.getItemFromBlock(endermiteOre), 0, new ModelResourceLocation(modid + ":" + ((EndermiteOre) endermiteOre).getName(), "inventory"));
+		renderItem.register(Item.getItemFromBlock(guardianOre), 0, new ModelResourceLocation(modid + ":" + ((GuardianOre) guardianOre).getName(), "inventory"));
+		renderItem.register(Item.getItemFromBlock(elderguardianOre), 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianOre) elderguardianOre).getName(), "inventory"));
 		
 		renderItem.register(Item.getItemFromBlock(dwarfLog), 0, new ModelResourceLocation(modid + ":" + ((DwarfLog) dwarfLog).getName(), "inventory"));
 		renderItem.register(Item.getItemFromBlock(dwarfLeaf), 0, new ModelResourceLocation(modid + ":" + ((DwarfLeaf) dwarfLeaf).getName(), "inventory"));
@@ -371,6 +385,24 @@ public static void MyRecipes(){ //method thats dealing the recipes
 				'B', geneEgg,
 			});
 		
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 67), new Object[] {
+				"AAA","ABA","AAA",
+				'A', endermiteBits, 
+				'B', geneEgg,
+			});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 68), new Object[] {
+				"AAA","ABA","AAA",
+				'A', guardianBits, 
+				'B', geneEgg,
+			});
+		/*
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 4), new Object[] {
+				"AAA","ABA","AAA",
+				'A', elderguardianOre, 
+				'B', geneEgg,
+			});
+		*/
 		GameRegistry.addSmelting(chickenOre, new ItemStack(chickenBits, 3), 5.00F);
 		GameRegistry.addSmelting(cowOre, new ItemStack(cowBits, 3), 5.00F);
 		GameRegistry.addSmelting(mooshroomOre, new ItemStack(mooshroomBits, 3), 5.00F);
@@ -396,6 +428,9 @@ public static void MyRecipes(){ //method thats dealing the recipes
 		GameRegistry.addSmelting(cavespiderOre, new ItemStack(cavespiderBits, 3), 5.00F);
 		GameRegistry.addSmelting(ghastOre, new ItemStack(ghastBits, 3), 5.00F);
 		GameRegistry.addSmelting(silverfishOre, new ItemStack(silverfishBits, 3), 5.00F);
+		GameRegistry.addSmelting(endermiteOre, new ItemStack(endermiteBits, 3), 5.00F);
+		GameRegistry.addSmelting(guardianOre, new ItemStack(guardianBits, 3), 5.00F);
+		GameRegistry.addSmelting(elderguardianOre, new ItemStack(elderguardianBits, 3), 5.00F);
 		GameRegistry.addSmelting(bushEgg, new ItemStack(geneEgg), 3.50F);
 		
 	}
@@ -428,6 +463,9 @@ public static void MyItems()
   cavespiderBits = new CaveSpiderBits();
   ghastBits = new GhastBits();
   silverfishBits = new SilverfishBits();
+  endermiteBits = new EndermiteBits();
+  guardianBits = new GuardianBits();
+  //elderguardianBits = new ElderGuardianBits();
  
   bushMush = new BushMush();
  
@@ -497,6 +535,9 @@ public static void renderItems()
 	renderItem.register(woodPulp, 0, new ModelResourceLocation(modid + ":" + ((WoodPulp) woodPulp).getName(), "inventory"));
 	renderItem.register(zombieBits, 0, new ModelResourceLocation(modid + ":" + ((ZombieBits) zombieBits).getName(), "inventory"));
 	renderItem.register(zombiepigmenBits, 0, new ModelResourceLocation(modid + ":" + ((ZombiePigmenBits) zombiepigmenBits).getName(), "inventory"));
+	renderItem.register(endermiteBits, 0, new ModelResourceLocation(modid + ":" + ((EndermiteBits) endermiteBits).getName(), "inventory"));
+	renderItem.register(guardianBits, 0, new ModelResourceLocation(modid + ":" + ((GuardianBits) guardianBits).getName(), "inventory"));
+	//renderItem.register(elderguardianBits, 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianBits) elderguardianBits).getName(), "inventory"));
 }
 
 
