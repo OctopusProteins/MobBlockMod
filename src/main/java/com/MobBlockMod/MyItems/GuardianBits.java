@@ -7,13 +7,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 
-public class BaseItem extends Item 
+public class GuardianBits extends Item 
 {
-	private final String name = "name";
+	private final String name = "guardianBits";
 	 
-	public BaseItem() 
+	public GuardianBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		GameRegistry.registerItem(this, name);
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    
