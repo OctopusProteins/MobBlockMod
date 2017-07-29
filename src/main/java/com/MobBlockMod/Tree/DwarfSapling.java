@@ -11,12 +11,12 @@ import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
-import net.minecraft.block.state.BlockState;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.BlockPos;
-import net.minecraft.util.EnumWorldBlockLayer;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
@@ -41,16 +41,15 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 		GameRegistry.registerBlock(this, name);
 	}
 	@Override
-	protected BlockState createBlockState() {
-		return new BlockState(this, new IProperty[]{STAGE});
+	protected BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, new IProperty[]{STAGE});
 	}
 	
 	@SideOnly(Side.CLIENT)
-    public EnumWorldBlockLayer getBlockLayer()
+    public BlockRenderLayer getBlockLayer()
     {
-      return EnumWorldBlockLayer.CUTOUT;
+      return BlockRenderLayer.CUTOUT;
     }
-    @Override
     public boolean isOpaqueCube() {
     	
     	return false;
@@ -87,7 +86,7 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 		IBlockState soil = worldIn.getBlockState(pos.down());
         if (state.getBlock() == this) //Forge: This function is called during world gen and placement, before this block is set, so if we are not 'here' then assume it's the pre-check.
         {
-            return soil.getBlock().canSustainPlant(worldIn, pos.down(), net.minecraft.util.EnumFacing.UP, this);
+            return soil.getBlock().canSustainPlant(soil, worldIn, pos.down(), net.minecraft.util.EnumFacing.UP, this);
         }
         return SOIL.contains(soil);
     }

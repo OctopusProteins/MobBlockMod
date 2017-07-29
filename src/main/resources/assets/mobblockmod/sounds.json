@@ -1,0 +1,5 @@
+{
+        "mushroomLive": {"category": "ambient", "sounds": [{"name": "mobblockmod:mushroomLive","stream":false}]},
+        "mushroomHurt": {"category": "ambient", "sounds": [{"name": "mobblockmod:mushroomHurt","stream":false}]},
+        "mushroomDie": {"category": "ambient", "sounds": [{"name": "mobblockmod:mushroomDie","stream":false}]}
+}

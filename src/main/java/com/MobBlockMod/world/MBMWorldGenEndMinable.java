@@ -5,10 +5,10 @@ import java.util.Random;
 import com.google.common.base.Predicate;
 
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.state.pattern.BlockHelper;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.BlockPos;
-import net.minecraft.util.MathHelper;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
@@ -21,7 +21,7 @@ public class MBMWorldGenEndMinable extends WorldGenerator{
 
     public MBMWorldGenEndMinable(IBlockState p_i45630_1_, int p_i45630_2_)
     {
-        this(p_i45630_1_, p_i45630_2_, BlockHelper.forBlock(Blocks.end_stone));
+        this(p_i45630_1_, p_i45630_2_, BlockMatcher.forBlock(Blocks.end_stone));
     }
 
     public MBMWorldGenEndMinable(IBlockState p_i45631_1_, int p_i45631_2_, Predicate p_i45631_3_)
@@ -77,7 +77,7 @@ public class MBMWorldGenEndMinable extends WorldGenerator{
                                 {
                                     BlockPos blockpos1 = new BlockPos(l1, i2, j2);
 
-                                    if (worldIn.getBlockState(blockpos1).getBlock().isReplaceableOreGen(worldIn, blockpos1, this.field_175919_c))
+                                    if (worldIn.getBlockState(blockpos1).getBlock().isReplaceableOreGen(oreBlock, worldIn, blockpos1, this.field_175919_c))
                                     {
                                         worldIn.setBlockState(blockpos1, this.oreBlock, 2);
                                     }

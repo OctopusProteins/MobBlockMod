@@ -48,13 +48,6 @@ public class MushroomMobModel extends ModelBase
       Shape4.setTextureSize(64, 32);
       Shape4.mirror = true;
       setRotation(Shape4, 0F, 0F, 0F);
-      /*
-      if (true) {
-    	  this.isGiant = true;
-      }else{
-    	  this.isGiant = false;
-      }
-      */
   }
   
   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
@@ -71,7 +64,9 @@ public class MushroomMobModel extends ModelBase
         Shape3.render(f5);
         Shape4.render(f5);
         GlStateManager.popMatrix();
-    }/*else if (this.isGiant == true) {
+    }
+    /*
+    else if (this.isGiant()) {
     	GlStateManager.pushMatrix();
     	GlStateManager.scale(1.0F * 5.0F, 1.0F * 5.0F, 1.0F * 5.0F);
     	GlStateManager.translate(0.0F, 24.0F * f5, 0.0F);
@@ -81,7 +76,8 @@ public class MushroomMobModel extends ModelBase
     	Shape3.render(f5);
     	Shape4.render(f5);
     	GlStateManager.popMatrix();
-    }*/
+    }
+    */
     else {
     	Shape1.render(f5);
     	Shape2.render(f5);
@@ -102,12 +98,11 @@ public class MushroomMobModel extends ModelBase
     super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
   }
   /*
-  public boolean isGiant(Random rand) {
-		if (rand.nextInt(21) == 7) {
-			return true;
-		}else{
-			return false;
-		}
-	}
-*/
-}
+  public boolean isGiant() {
+	  Random rand = new Random();
+		if (rand.nextInt(21) < 5) return true;
+		return false;
+  }
+  */
+  
+ }
