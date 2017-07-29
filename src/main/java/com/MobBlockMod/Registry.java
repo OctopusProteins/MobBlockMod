@@ -1,19 +1,92 @@
 package com.MobBlockMod;
 
 import com.MobBlockMod.CreativeTabs.MobBlockModTab;
-import com.MobBlockMod.MyBlocks.*;
-import com.MobBlockMod.MyItems.*;
-import com.MobBlockMod.Tree.*;
+import com.MobBlockMod.MyBlocks.BatOre;
+import com.MobBlockMod.MyBlocks.BlazeOre;
+import com.MobBlockMod.MyBlocks.CaveSpiderOre;
+import com.MobBlockMod.MyBlocks.ChickenOre;
+import com.MobBlockMod.MyBlocks.CowOre;
+import com.MobBlockMod.MyBlocks.CreeperOre;
+import com.MobBlockMod.MyBlocks.ElderGuardianOre;
+import com.MobBlockMod.MyBlocks.EndermanOre;
+import com.MobBlockMod.MyBlocks.EndermiteOre;
+import com.MobBlockMod.MyBlocks.GhastOre;
+import com.MobBlockMod.MyBlocks.GuardianOre;
+import com.MobBlockMod.MyBlocks.HorseOre;
+import com.MobBlockMod.MyBlocks.MagmaCubeOre;
+import com.MobBlockMod.MyBlocks.MooshroomOre;
+import com.MobBlockMod.MyBlocks.OcelotOre;
+import com.MobBlockMod.MyBlocks.PigOre;
+import com.MobBlockMod.MyBlocks.RabbitOre;
+import com.MobBlockMod.MyBlocks.SheepOre;
+import com.MobBlockMod.MyBlocks.SilverfishOre;
+import com.MobBlockMod.MyBlocks.SkeletonOre;
+import com.MobBlockMod.MyBlocks.SlimeOre;
+import com.MobBlockMod.MyBlocks.SpiderOre;
+import com.MobBlockMod.MyBlocks.SquidOre;
+import com.MobBlockMod.MyBlocks.TabBlock;
+import com.MobBlockMod.MyBlocks.VillagerOre;
+import com.MobBlockMod.MyBlocks.WitchOre;
+import com.MobBlockMod.MyBlocks.WolfOre;
+import com.MobBlockMod.MyBlocks.ZombieOre;
+import com.MobBlockMod.MyBlocks.ZombiePigmenOre;
+import com.MobBlockMod.MyItems.BatBits;
+import com.MobBlockMod.MyItems.BlazeBits;
+import com.MobBlockMod.MyItems.BushEgg;
+import com.MobBlockMod.MyItems.BushMush;
+import com.MobBlockMod.MyItems.CapMush;
+import com.MobBlockMod.MyItems.CapSlice;
+import com.MobBlockMod.MyItems.CaveSpiderBits;
+import com.MobBlockMod.MyItems.ChickenBits;
+import com.MobBlockMod.MyItems.CowBits;
+import com.MobBlockMod.MyItems.CreeperBits;
+import com.MobBlockMod.MyItems.EndermanBits;
+import com.MobBlockMod.MyItems.EndermiteBits;
+import com.MobBlockMod.MyItems.GeneEgg;
+import com.MobBlockMod.MyItems.GhastBits;
+import com.MobBlockMod.MyItems.GrassShreds;
+import com.MobBlockMod.MyItems.GuardianBits;
+import com.MobBlockMod.MyItems.HorseBits;
+import com.MobBlockMod.MyItems.MagmaCubeBits;
+import com.MobBlockMod.MyItems.MooshroomBits;
+import com.MobBlockMod.MyItems.MushroomCap;
+import com.MobBlockMod.MyItems.MushroomCompound;
+import com.MobBlockMod.MyItems.MushroomStem;
+import com.MobBlockMod.MyItems.MushyPulp;
+import com.MobBlockMod.MyItems.OcelotBits;
+import com.MobBlockMod.MyItems.PigBits;
+import com.MobBlockMod.MyItems.Pulp;
+import com.MobBlockMod.MyItems.RabbitBits;
+import com.MobBlockMod.MyItems.RefinedPulp;
+import com.MobBlockMod.MyItems.SheepBits;
+import com.MobBlockMod.MyItems.SilverfishBits;
+import com.MobBlockMod.MyItems.SkeletonBits;
+import com.MobBlockMod.MyItems.SlimeBits;
+import com.MobBlockMod.MyItems.SpiderBits;
+import com.MobBlockMod.MyItems.SquidBits;
+import com.MobBlockMod.MyItems.StemMush;
+import com.MobBlockMod.MyItems.StemSlice;
+import com.MobBlockMod.MyItems.VillagerBits;
+import com.MobBlockMod.MyItems.WitchBits;
+import com.MobBlockMod.MyItems.WolfBits;
+import com.MobBlockMod.MyItems.WoodPulp;
+import com.MobBlockMod.MyItems.ZombieBits;
+import com.MobBlockMod.MyItems.ZombiePigmenBits;
+import com.MobBlockMod.Tree.DwarfLeaf;
+import com.MobBlockMod.Tree.DwarfLog;
+import com.MobBlockMod.Tree.DwarfSapling;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -106,6 +179,10 @@ public class Registry {
 	public static Item capMush;
 	public static Item stemMush;
 	public static Item mushroomCompound;
+	
+	public static SoundEvent mushroomLive;
+	public static SoundEvent mushroomHurt;
+	public static SoundEvent mushroomDie;
 	
 	public static void MyBlocks()
 	  {
@@ -539,6 +616,17 @@ public static void renderItems()
 	renderItem.register(guardianBits, 0, new ModelResourceLocation(modid + ":" + ((GuardianBits) guardianBits).getName(), "inventory"));
 	//renderItem.register(elderguardianBits, 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianBits) elderguardianBits).getName(), "inventory"));
 }
+
+	public static void registerSounds() {
+		mushroomLive = registerSound("mushroomLive");
+		mushroomHurt = registerSound("mushroomHurt");
+		mushroomDie = registerSound("mushroomDie");
+	}
+	
+	private static SoundEvent registerSound(String soundName) {
+		final ResourceLocation id = new ResourceLocation(modid, soundName);
+		return GameRegistry.register(new SoundEvent(id).setRegistryName(id));
+	}
 
 
 }

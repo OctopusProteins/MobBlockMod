@@ -7,12 +7,11 @@ import java.util.Random;
 import com.MobBlockMod.Registry;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockLeaves;
-import net.minecraft.block.BlockPlanks.EnumType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockPos;
-import net.minecraft.util.EnumWorldBlockLayer;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -30,7 +29,7 @@ public class DwarfLeaf extends Block
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(0.5F);
-	      	        setStepSound(Block.soundTypeGrass);
+	      	        setStepSound(stepSound.PLANT);
 	      	        
 	      	        
 	        }
@@ -39,15 +38,15 @@ public class DwarfLeaf extends Block
 	        	return name;
 	        }
 	        
+	        
 	        @SideOnly(Side.CLIENT)
-	        public EnumWorldBlockLayer getBlockLayer()
+	        public BlockRenderLayer getBlockLayer()
 	        {
-	          return EnumWorldBlockLayer.CUTOUT;
+	          return BlockRenderLayer.CUTOUT;
 	        }
 	        @Override
-	        public boolean isOpaqueCube() {
-	        	
-	        	return false;
+	        public boolean isOpaqueCube(IBlockState iBlockState) {
+	          return false;
 	        }
 			public List<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune) {
 				// TODO Auto-generated method stub

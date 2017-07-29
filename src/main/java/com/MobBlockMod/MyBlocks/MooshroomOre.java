@@ -17,7 +17,7 @@ public class MooshroomOre extends Block
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);
-	      	        setStepSound(Block.soundTypeStone);
+	      	        setStepSound(stepSound.STONE);
 	        }
 	        public String getName()
 	        {

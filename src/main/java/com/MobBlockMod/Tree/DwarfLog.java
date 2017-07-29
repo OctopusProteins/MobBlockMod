@@ -17,7 +17,7 @@ public class DwarfLog extends Block
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(2.5F);
-	      	        setStepSound(Block.soundTypeWood);
+	      	        setStepSound(stepSound.WOOD);
 	        }
 	        public String getName()
 	        {

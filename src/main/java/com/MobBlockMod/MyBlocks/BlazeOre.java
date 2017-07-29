@@ -17,7 +17,7 @@ public class BlazeOre extends Block
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);
-	      	        setStepSound(Block.soundTypeStone);
+	      	        setStepSound(stepSound.STONE);
 	      	        setLightLevel(8 / 16f);
 	        }
 	        public String getName()

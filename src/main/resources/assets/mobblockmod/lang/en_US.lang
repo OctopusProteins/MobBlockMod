@@ -91,4 +91,4 @@ item.mushroomCap.name=Mushroom Cap
 item.mushroomStem.name=Mushroom Stem
 item.mushroomCompound.name=Mushroom Compound
 
-entity.Mushroom Mob.name=Mushroom Mob
+entity.MobBlockMod.Mushroom Mob.name=Mushroom Mob

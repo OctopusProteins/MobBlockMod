@@ -7,8 +7,9 @@ import com.MobBlockMod.Registry;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
@@ -69,14 +70,14 @@ public class DwarfTree extends WorldGenerator implements IWorldGenerator {
 	
 	public void buildBlock(World world, BlockPos blockPos, IBlockState block, int meta) {
 		
-		if (world.isAirBlock(blockPos) || world.getBlockState(blockPos).getBlock().isLeaves(world, blockPos)) {
+		if (world.isAirBlock(blockPos) || world.getBlockState(blockPos).getBlock().isLeaves(block, world, blockPos)) {
 			
 			world.setBlockState(blockPos, block);
 		}
 	}
 
 	@Override
-	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator,
+	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
 			IChunkProvider chunkProvider) {
 		// TODO Auto-generated method stub
 		
