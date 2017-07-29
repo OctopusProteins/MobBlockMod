@@ -76,6 +76,11 @@ Update for 1.8.9
 *********************************
 Update for 1.9
 Error chasing!
+MM now commit suicide IDK y
+*********************************
+2.5.14
+*********************************
+Added spawn location to MM
 *********************************
 
 PLANNED
@@ -90,12 +95,5 @@ FUTURE
 *********************************
 Updates for 1.10, 1.11, 1.12, etc,
 New mobs
-Texture overhaul
-Sapling replacement??
+MM colonies
 *********************************
-
-PT1
--bigger veins
--toughness
--textures
--
