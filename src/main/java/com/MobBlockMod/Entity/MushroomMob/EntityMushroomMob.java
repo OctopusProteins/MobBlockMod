@@ -50,7 +50,7 @@ public class EntityMushroomMob extends EntityTameable{
 		
 		this.tasks.addTask(0, new EntityAIWander(this, 0.3D));
 		this.tasks.addTask(1, new EntityAIPanic(this, 0.4D));
-		this.tasks.addTask(2, new EntityAITempt(this, 0.4D, Items.mushroom_stew, false));
+		this.tasks.addTask(2, new EntityAITempt(this, 0.4D, Items.MUSHROOM_STEW, false));
 		this.tasks.addTask(3, new EntityAIFollowOwner(this, 1.0D, 10.0F, 2.0F));
 		this.tasks.addTask(4, new EntityAIMate(this, 0.5D));
 		this.tasks.addTask(5, new EntityAISwimming(this));

@@ -4,6 +4,7 @@ import com.MobBlockMod.Registry;
 import com.MobBlockMod.CreativeTabs.MobBlockModTab;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -14,12 +15,13 @@ public class GuardianOre extends Block
 	
 	        public GuardianOre() 
 	        {
-	                super(Material.ground);
+	                super(Material.GROUND);
 	                GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);
-	      	        setStepSound(stepSound.STONE);
+	      	        setHarvestLevel("pickaxe", 0);
+	      	      this.setSoundType(SoundType.STONE);
 	        }
 	        public String getName()
 	        {

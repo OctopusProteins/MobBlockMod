@@ -24,7 +24,7 @@ public class DwarfTree extends WorldGenerator implements IWorldGenerator {
 		
 		IBlockState block = world.getBlockState(blockPos.add(0, -1, 0));
 		
-		if (block == Blocks.grass.getDefaultState() || block == Blocks.dirt.getDefaultState()){
+		if (block == Blocks.GRASS.getDefaultState() || block == Blocks.DIRT.getDefaultState()){
 			
 			int prob = random.nextInt(10);
 			if (prob == 7) {
@@ -64,7 +64,7 @@ public class DwarfTree extends WorldGenerator implements IWorldGenerator {
 		
 		Block block = world.getBlockState(blockPos).getBlock(); 
 		if (!(world.isAirBlock(blockPos))) {
-			world.setBlockState(blockPos, Blocks.air.getDefaultState());//(x, y, z, Blocks.air);
+			world.setBlockState(blockPos, Blocks.AIR.getDefaultState());//(x, y, z, Blocks.air);
 		}
 	}
 	

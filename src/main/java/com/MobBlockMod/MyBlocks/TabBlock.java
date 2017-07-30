@@ -8,7 +8,7 @@ public class TabBlock extends Block{
 	private final String name = "tabBlock";
 	
 	public TabBlock() {
-		super(Material.air);
+		super(Material.AIR);
 		GameRegistry.registerBlock(this, name);
         setUnlocalizedName(name);
 	}

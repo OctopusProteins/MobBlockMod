@@ -3,6 +3,7 @@ package com.MobBlockMod.Tree;
 import com.MobBlockMod.Registry;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -12,12 +13,12 @@ public class DwarfLog extends Block
 	
 	        public DwarfLog() 
 	        {
-	                super(Material.wood);
+	                super(Material.WOOD);
 	                GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(2.5F);
-	      	        setStepSound(stepSound.WOOD);
+	                this.setSoundType(SoundType.WOOD);
 	        }
 	        public String getName()
 	        {
