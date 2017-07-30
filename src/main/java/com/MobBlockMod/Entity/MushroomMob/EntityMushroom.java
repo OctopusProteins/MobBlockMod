@@ -20,7 +20,7 @@ public class EntityMushroom {
 	private EntityMushroom() {
 		availableIndicies = new BitSet();
 		availableIndicies.set(1, 255);
-		for (Object id : EntityList.idToClassMapping.keySet()) {
+		for (Object id : EntityList.ID_TO_CLASS.keySet()) {
 			availableIndicies.clear((Integer) id);
 		}
 	}

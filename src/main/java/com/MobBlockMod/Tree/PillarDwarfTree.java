@@ -26,7 +26,7 @@ public class PillarDwarfTree extends WorldGenerator implements IWorldGenerator {
 		IBlockState block = world.getBlockState(blockPos.add(0, -1, 0));
 		int interval = random.nextInt(30);
 		
-		if ((block == Blocks.grass.getDefaultState() || block == Blocks.dirt.getDefaultState()) && interval == 7) {
+		if ((block == Blocks.GRASS.getDefaultState() || block == Blocks.DIRT.getDefaultState()) && interval == 7) {
 			
 			int height = 30 + random.nextInt(30);
 			generateTrunk(world, blockPos, trunkBlock, leafBlock, height);
@@ -77,7 +77,7 @@ public void setNoBlock(World world, BlockPos blockPos) {
 		Block block = world.getBlockState(blockPos).getBlock(); 
 		if (!(world.isAirBlock(blockPos))) {
 			
-			world.setBlockState(blockPos, Blocks.air.getDefaultState());//(x, y, z, Blocks.air);
+			world.setBlockState(blockPos, Blocks.AIR.getDefaultState());//(x, y, z, Blocks.air);
 		}
 	}
 	

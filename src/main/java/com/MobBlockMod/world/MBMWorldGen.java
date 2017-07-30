@@ -72,14 +72,14 @@ public class MBMWorldGen implements IWorldGenerator{
 		this.guardianOre = new WorldGenMinable(Registry.guardianOre.getDefaultState(), 4);
 		//this.elderguardianOre = new WorldGenMinable(Registry.elderguardianOre.getDefaultState(), 3);
 		
-		this.shulkerOre = new WorldGenMinable(Registry.shulkerOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.end_stone));
-		this.endermanOre = new WorldGenMinable(Registry.endermanOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.end_stone));
-		this.endermiteOre = new WorldGenMinable(Registry.endermiteOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.end_stone));
+		this.shulkerOre = new WorldGenMinable(Registry.shulkerOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
+		this.endermanOre = new WorldGenMinable(Registry.endermanOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.END_STONE));
+		this.endermiteOre = new WorldGenMinable(Registry.endermiteOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.END_STONE));
 		
-		this.ghastOre = new WorldGenMinable(Registry.ghastOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.netherrack));
-		this.zombiepigmenOre = new WorldGenMinable(Registry.zombiepigmenOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.netherrack));
-		this.blazeOre = new WorldGenMinable(Registry.blazeOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.netherrack));
-		this.magmacubeOre = new WorldGenMinable(Registry.magmacubeOre.getDefaultState(), 7, BlockMatcher.forBlock(Blocks.netherrack));
+		this.ghastOre = new WorldGenMinable(Registry.ghastOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.zombiepigmenOre = new WorldGenMinable(Registry.zombiepigmenOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.blazeOre = new WorldGenMinable(Registry.blazeOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.magmacubeOre = new WorldGenMinable(Registry.magmacubeOre.getDefaultState(), 7, BlockMatcher.forBlock(Blocks.NETHERRACK));
 	}
 	
 	@Override

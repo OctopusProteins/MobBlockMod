@@ -88,6 +88,10 @@ Added spawn location to MM
 WorldGen specific classes removed
 Using stock instead
 *********************************
+2.6.1
+*********************************
+Update to 1.9.4
+*********************************
 
 PLANNED
 2.6

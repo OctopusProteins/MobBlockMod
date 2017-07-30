@@ -281,7 +281,7 @@ public static void MyRecipes(){ //method thats dealing the recipes
 	
 	GameRegistry.addRecipe(new ItemStack(bushEgg), new Object[] {
 			"BAB","DBE","CCC",
-			'A', Items.egg,
+			'A', Items.EGG,
 			'B', bushMush,
 			'C', refinedPulp,
 			'D', capMush,
@@ -290,8 +290,8 @@ public static void MyRecipes(){ //method thats dealing the recipes
 		
 		GameRegistry.addRecipe(new ItemStack(mushroomCompound), new Object[] {
 			"AB ","BA ","   ",
-			'A', Blocks.red_mushroom,
-			'B', Blocks.brown_mushroom,
+			'A', Blocks.RED_MUSHROOM,
+			'B', Blocks.BROWN_MUSHROOM,
 			
 		});
 		
@@ -316,170 +316,170 @@ public static void MyRecipes(){ //method thats dealing the recipes
 			'A', pulp,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 93), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 93), new Object[] {
 			"AAA","ABA","AAA",
 			'A', chickenBits,
 			'B', geneEgg,
 			
 		});
 	
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 92), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 92), new Object[] {
 			"AAA","ABA","AAA",
 			'A', cowBits,
 			'B', geneEgg,
 		});
 						
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 96), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 96), new Object[] {
 			"AAA","ABA","AAA",
 			'A', mooshroomBits,
 			'B', geneEgg,
 			
 		});
 			
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 90), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 90), new Object[] {
 			"AAA","ABA","AAA",
 			'A', pigBits,
 			'B', geneEgg,
 		});
 					
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 91), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 91), new Object[] {
 			"AAA","ABA","AAA",
 			'A', sheepBits,
 			'B', geneEgg,
 		});
 					
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 50), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 50), new Object[] {
 			"AAA","ABA","AAA",
 			'A', creeperBits,
 			'B', geneEgg,
 		});
 					
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 54), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 54), new Object[] {
 			"AAA","ABA","AAA",
 			'A', zombieBits,
 			'B', geneEgg,
 		});
 						
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 51), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 51), new Object[] {
 			"AAA","ABA","AAA",
 			'A', skeletonBits,
 			'B', geneEgg,
 		});
 						
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 52), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 52), new Object[] {
 			"AAA","ABA","AAA",
 			'A', spiderBits,
 			'B', geneEgg,
 		});
 									
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 95), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 95), new Object[] {
 			"AAA","ABA","AAA",
 			'A', wolfBits,
 			'B', geneEgg,
 		});
 					
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 58), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 58), new Object[] {
 			"AAA","ABA","AAA",
 			'A', endermanBits,
 			'B', geneEgg,
 		});
 												
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 120), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 120), new Object[] {
 			"AAA","ABA","AAA",
 			'A', villagerBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 98), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 98), new Object[] {
 			"AAA","ABA","AAA",
 			'A', ocelotBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 100), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 100), new Object[] {
 			"AAA","ABA","AAA",
 			'A', horseBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 101), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 101), new Object[] {
 			"AAA","ABA","AAA",
 			'A', rabbitBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 57), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 57), new Object[] {
 			"AAA","ABA","AAA",
 			'A', zombiepigmenBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 61), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 61), new Object[] {
 			"AAA","ABA","AAA",
 			'A', blazeBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 66), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 66), new Object[] {
 			"AAA","ABA","AAA",
 			'A', witchBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 55), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 55), new Object[] {
 			"AAA","ABA","AAA",
 			'A', slimeBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 65), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 65), new Object[] {
 			"AAA","ABA","AAA",
 			'A', batBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 94), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 94), new Object[] {
 			"AAA","ABA","AAA",
 			'A', squidBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 59), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 59), new Object[] {
 			"AAA","ABA","AAA",
 			'A', cavespiderBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 56), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 56), new Object[] {
 			"AAA","ABA","AAA",
 			'A', ghastBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 60), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 60), new Object[] {
 			"AAA","ABA","AAA",
 			'A', silverfishBits, 
 			'B', geneEgg,
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 62), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 62), new Object[] {
 				"AAA","ABA","AAA",
 				'A', magmacubeBits, 
 				'B', geneEgg,
 			});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 67), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 67), new Object[] {
 				"AAA","ABA","AAA",
 				'A', endermiteBits, 
 				'B', geneEgg,
 			});
 		
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 68), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 68), new Object[] {
 				"AAA","ABA","AAA",
 				'A', guardianBits, 
 				'B', geneEgg,
 			});
-		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 69), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 69), new Object[] {
 				"AAA","ABA","AAA",
 				'A', shulkerBits, 
 				'B', geneEgg,

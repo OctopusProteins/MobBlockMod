@@ -29,11 +29,11 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 
 	public static final PropertyInteger STAGE = PropertyInteger.create("stage", 0, 1);
 	public static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
-	public static final List<net.minecraft.block.Block> SOIL = Arrays.asList(new net.minecraft.block.Block[]{Blocks.dirt, Blocks.grass});
+	public static final List<net.minecraft.block.Block> SOIL = Arrays.asList(new net.minecraft.block.Block[]{Blocks.DIRT, Blocks.GRASS});
 	private final static String name = "dwarfSapling";
 	
 	public DwarfSapling() {
-		super(Material.plants);
+		super(Material.PLANTS);
 		setUnlocalizedName(name);
 		this.setTickRandomly(true);
 		this.setDefaultState(this.getDefaultState().withProperty(STAGE, 0));
@@ -69,7 +69,7 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 		if (!this.canBlockStay(worldIn, pos, state))
         {
             this.dropBlockAsItem(worldIn, pos, state, 0);
-            worldIn.setBlockState(pos, Blocks.air.getDefaultState(), 3);
+            worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 3);
         }
     }
 	
