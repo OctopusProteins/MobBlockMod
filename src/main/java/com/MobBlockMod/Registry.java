@@ -19,6 +19,7 @@ import com.MobBlockMod.MyBlocks.OcelotOre;
 import com.MobBlockMod.MyBlocks.PigOre;
 import com.MobBlockMod.MyBlocks.RabbitOre;
 import com.MobBlockMod.MyBlocks.SheepOre;
+import com.MobBlockMod.MyBlocks.ShulkerOre;
 import com.MobBlockMod.MyBlocks.SilverfishOre;
 import com.MobBlockMod.MyBlocks.SkeletonOre;
 import com.MobBlockMod.MyBlocks.SlimeOre;
@@ -59,6 +60,7 @@ import com.MobBlockMod.MyItems.Pulp;
 import com.MobBlockMod.MyItems.RabbitBits;
 import com.MobBlockMod.MyItems.RefinedPulp;
 import com.MobBlockMod.MyItems.SheepBits;
+import com.MobBlockMod.MyItems.ShulkerBits;
 import com.MobBlockMod.MyItems.SilverfishBits;
 import com.MobBlockMod.MyItems.SkeletonBits;
 import com.MobBlockMod.MyItems.SlimeBits;
@@ -124,6 +126,7 @@ public class Registry {
 	public static Block guardianOre;
 	public static Block elderguardianOre;
 	//elder guardian implemented, not used until 1.11
+	public static Block shulkerOre;
 	
 	public static Block dwarfLog;
 	public static Block dwarfLeaf;
@@ -162,6 +165,7 @@ public class Registry {
 	public static Item guardianBits;
 	public static Item elderguardianBits;
 	//elder guardian implemented, not used until 1.11
+	public static Item shulkerBits;
 	
 	public static Item bushMush;
 	public static Item grassShreds;
@@ -214,6 +218,7 @@ public class Registry {
 	    endermiteOre = new EndermiteOre();
 	    guardianOre = new GuardianOre();
 	    elderguardianOre = new ElderGuardianOre();
+	    shulkerOre = new ShulkerOre();
 	    
 	    dwarfLog = new DwarfLog();
 	    dwarfLeaf = new DwarfLeaf();
@@ -254,6 +259,7 @@ public class Registry {
 		renderItem.register(Item.getItemFromBlock(endermiteOre), 0, new ModelResourceLocation(modid + ":" + ((EndermiteOre) endermiteOre).getName(), "inventory"));
 		renderItem.register(Item.getItemFromBlock(guardianOre), 0, new ModelResourceLocation(modid + ":" + ((GuardianOre) guardianOre).getName(), "inventory"));
 		renderItem.register(Item.getItemFromBlock(elderguardianOre), 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianOre) elderguardianOre).getName(), "inventory"));
+		renderItem.register(Item.getItemFromBlock(shulkerOre), 0, new ModelResourceLocation(modid + ":" + ((ShulkerOre) shulkerOre).getName(), "inventory"));
 		
 		renderItem.register(Item.getItemFromBlock(dwarfLog), 0, new ModelResourceLocation(modid + ":" + ((DwarfLog) dwarfLog).getName(), "inventory"));
 		renderItem.register(Item.getItemFromBlock(dwarfLeaf), 0, new ModelResourceLocation(modid + ":" + ((DwarfLeaf) dwarfLeaf).getName(), "inventory"));
@@ -473,6 +479,11 @@ public static void MyRecipes(){ //method thats dealing the recipes
 				'A', guardianBits, 
 				'B', geneEgg,
 			});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 69), new Object[] {
+				"AAA","ABA","AAA",
+				'A', shulkerBits, 
+				'B', geneEgg,
+			});
 		/*
 		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 4), new Object[] {
 				"AAA","ABA","AAA",
@@ -508,6 +519,7 @@ public static void MyRecipes(){ //method thats dealing the recipes
 		GameRegistry.addSmelting(endermiteOre, new ItemStack(endermiteBits, 3), 5.00F);
 		GameRegistry.addSmelting(guardianOre, new ItemStack(guardianBits, 3), 5.00F);
 		GameRegistry.addSmelting(elderguardianOre, new ItemStack(elderguardianBits, 3), 5.00F);
+		GameRegistry.addSmelting(shulkerOre, new ItemStack(shulkerOre, 3), 5.00F);
 		GameRegistry.addSmelting(bushEgg, new ItemStack(geneEgg), 3.50F);
 		
 	}
@@ -543,6 +555,7 @@ public static void MyItems()
   endermiteBits = new EndermiteBits();
   guardianBits = new GuardianBits();
   //elderguardianBits = new ElderGuardianBits();
+  shulkerBits = new ShulkerBits();
  
   bushMush = new BushMush();
  
@@ -615,6 +628,7 @@ public static void renderItems()
 	renderItem.register(endermiteBits, 0, new ModelResourceLocation(modid + ":" + ((EndermiteBits) endermiteBits).getName(), "inventory"));
 	renderItem.register(guardianBits, 0, new ModelResourceLocation(modid + ":" + ((GuardianBits) guardianBits).getName(), "inventory"));
 	//renderItem.register(elderguardianBits, 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianBits) elderguardianBits).getName(), "inventory"));
+	renderItem.register(shulkerBits, 0, new ModelResourceLocation(modid + ":" + ((ShulkerBits) shulkerBits).getName(), "inventory"));
 }
 
 	public static void registerSounds() {

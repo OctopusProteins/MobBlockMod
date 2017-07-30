@@ -31,6 +31,8 @@ tile.silverfishOre.name=Silverfish Block
 tile.endermiteOre.name=Endermite Block
 tile.guardianOre.name=Guardian Block
 tile.elderguardianOre.name=Elder Guardian Block
+//2.6
+tile.shulkerBits.name=Shulker Block
 
 
 
@@ -66,6 +68,8 @@ item.silverfishBits.name=Silverfish Bits
 item.endermiteBits.name=Endermite Bits
 item.guardianBits.name=Guardian Bits
 item.elderguardianBits.name=Elder Guardian Bits
+//2.6
+item.shulkerBits.name=Shulker Bits
 
 item.bushMush.name=Bush Mush
 item.grassShreds.name=Grass Shreds
