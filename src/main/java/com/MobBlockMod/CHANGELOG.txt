@@ -76,11 +76,17 @@ Update for 1.8.9
 *********************************
 Update for 1.9
 Error chasing!
-MM now commit suicide IDK y
+MM now commit suicide IDK y lel
 *********************************
 2.5.14
 *********************************
 Added spawn location to MM
+*********************************
+2.6
+*********************************
+1.9 mob - Shulker stuff
+WorldGen specific classes removed
+Using stock instead
 *********************************
 
 PLANNED

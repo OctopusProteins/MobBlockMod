@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "down": "MobBlockMod:blocks/shulkerOre_0",
+        "up": "MobBlockMod:blocks/shulkerOre_0",
+        "east": "MobBlockMod:blocks/shulkerOre_1",
+        "west": "MobBlockMod:blocks/shulkerOre_1",
+        "north": "MobBlockMod:blocks/shulkerOre_1",
+        "south": "MobBlockMod:blocks/shulkerOre_1",
+        "particle": "MobBlockMod:blocks/shulkerOre_1"
+    }
+}
