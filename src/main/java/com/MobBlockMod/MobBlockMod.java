@@ -27,7 +27,7 @@ public class MobBlockMod {
 //List Items and Blocks Here!
 	
     public static final String MODID = "MobBlockMod";
-    public static final String VERSION = "2.6.2";
+    public static final String VERSION = "2.6.3";
     
         // The instance of your mod that Forge uses.
     @Instance(MODID)

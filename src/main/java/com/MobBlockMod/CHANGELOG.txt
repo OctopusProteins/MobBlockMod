@@ -98,6 +98,10 @@ Fixed leaf and log flammability
 Updated MM AI
 Added new IAttributes
 *********************************
+2.6.3
+*********************************
+Update to 1.10
+*********************************
 
 PLANNED
 
