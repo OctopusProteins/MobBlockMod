@@ -10,16 +10,18 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IShearable;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class DwarfLeaf extends Block
+public class DwarfLeaf extends Block implements IShearable
 {
 	private final String name = "dwarfLeaf";
 	
@@ -29,9 +31,9 @@ public class DwarfLeaf extends Block
 	                GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
-	                setHardness(0.5F);
+	                setHardness(0.2F);
 	                this.setSoundType(SoundType.PLANT);
-	      	        
+	      	        Blocks.FIRE.setFireInfo(this, 8, 60);
 	      	        
 	        }
 	        public String getName()
@@ -64,4 +66,9 @@ public class DwarfLeaf extends Block
 		        this.dropBlockAsItem(worldIn, pos, worldIn.getBlockState(pos), 0);
 		        worldIn.setBlockToAir(pos);
 		    }
+			@Override
+			public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) {
+				// TODO Auto-generated method stub
+				return true;
+			}
 }
