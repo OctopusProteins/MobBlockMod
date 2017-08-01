@@ -109,6 +109,12 @@ Added stuff to support 1.11 update
 Removed @Dep tags
 Fixed unobtainable items
 *********************************
+2.6.7
+*********************************
+Update to 1.10.2
+*********************************
+
+
 PLANNED
 Updated to 1.10.2
 Update to 1.11
