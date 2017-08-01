@@ -1,4 +1,4 @@
-package com.MobBlockMod.Tree;
+package com.MobBlockMod.tree;
 
 import java.util.ArrayList;
 import java.util.List;

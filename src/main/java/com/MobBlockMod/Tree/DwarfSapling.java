@@ -1,4 +1,4 @@
-package com.MobBlockMod.Tree;
+package com.MobBlockMod.tree;
 
 import java.util.Arrays;
 import java.util.List;
@@ -73,7 +73,6 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
         }
     }
 	
-	@SuppressWarnings(value="deprecation")
 	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, net.minecraft.block.Block blockIn,
 			BlockPos fromPos) {
 		//super.neighborChanged(state, worldIn, pos, blockIn, fromPos);

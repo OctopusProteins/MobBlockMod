@@ -32,8 +32,16 @@ tile.endermiteOre.name=Endermite Block
 tile.guardianOre.name=Guardian Block
 tile.elderguardianOre.name=Elder Guardian Block
 //2.6
-tile.shulkerBits.name=Shulker Block
-
+tile.shulkerOre.name=Shulker Block
+//2.6.6
+tile.polarbearOre.name=Polar Bear Block
+tile.witherskeletonOre.name=Wither Skeleton Block
+tile.huskOre.name=Husk Block
+tile.strayOre.name=Stray Block
+tile.muleOre.name=Mule Block
+tile.donkeyOre.name=Donkey Block
+tile.skeletonhorseOre.name=Skeleton Horse Block
+tile.zombiehorseOre.name=Zombie Horse Block
 
 
 //1.0
@@ -70,6 +78,16 @@ item.guardianBits.name=Guardian Bits
 item.elderguardianBits.name=Elder Guardian Bits
 //2.6
 item.shulkerBits.name=Shulker Bits
+//2.6.6
+item.polarbearBits.name=Polar Bear Bits
+item.witherskeletonBits.name=Wither Skeleton Bits
+item.huskBits.name=Husk Bits
+item.strayBits.name=Stray Bits
+item.muleBits.name=Mule Bits
+item.donkeyBits.name=Donkey Bits
+item.skeletonhorseBits.name=Skeleton Horse Bits
+item.zombiehorseBits.name=Zombie Horse Bits
+
 
 item.bushMush.name=Bush Mush
 item.grassShreds.name=Grass Shreds

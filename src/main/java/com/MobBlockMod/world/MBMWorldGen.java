@@ -46,6 +46,14 @@ public class MBMWorldGen implements IWorldGenerator{
 	private WorldGenerator guardianOre;
 	private WorldGenerator elderguardianOre;
 	private WorldGenerator shulkerOre;
+	private WorldGenerator polarbearOre;
+	private WorldGenerator witherskeletonOre;
+	private WorldGenerator huskOre;
+	private WorldGenerator strayOre;
+	private WorldGenerator muleOre;
+	private WorldGenerator donkeyOre;
+	private WorldGenerator skeletonhorseOre;
+	private WorldGenerator zombiehorseOre;
 	
 	public MBMWorldGen() {
 		this.batOre = new WorldGenMinable(Registry.batOre.getDefaultState(), 8);
@@ -71,6 +79,14 @@ public class MBMWorldGen implements IWorldGenerator{
 		this.silverfishOre = new WorldGenMinable(Registry.silverfishOre.getDefaultState(), 5);
 		this.guardianOre = new WorldGenMinable(Registry.guardianOre.getDefaultState(), 4);
 		//this.elderguardianOre = new WorldGenMinable(Registry.elderguardianOre.getDefaultState(), 3);
+		this.polarbearOre = new WorldGenMinable(Registry.polarbearOre.getDefaultState(), 5);
+//		this.witherskeletonOre = new WorldGenMinable(Registry.witherskeletonOre.getDefaultState(), 4);
+//		this.huskOre = new WorldGenMinable(Registry.huskOre.getDefaultState(), 5);
+//		this.strayOre = new WorldGenMinable(Registry.strayOre.getDefaultState(), 5);
+//		this.muleOre = new WorldGenMinable(Registry.muleOre.getDefaultState(), 5);
+//		this.strayOre = new WorldGenMinable(Registry.strayOre.getDefaultState(), 5);
+//		this.skeletonhorseOre = new WorldGenMinable(Registry.skeletonhorseOre.getDefaultState(), 4);
+//		this.zombiehorseOre = new WorldGenMinable(Registry.zombiehorseOre.getDefaultState(), 4);
 		
 		this.shulkerOre = new WorldGenMinable(Registry.shulkerOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
 		this.endermanOre = new WorldGenMinable(Registry.endermanOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.END_STONE));
@@ -111,6 +127,14 @@ public class MBMWorldGen implements IWorldGenerator{
 			this.runGenerator(silverfishOre, world, random, chunkX, chunkZ, 5, 0, 35);
 			this.runGenerator(guardianOre, world, random, chunkX, chunkZ, 6, 0, 35);
 			//this.runGenerator(elderguardianOre, world, random, chunkX, chunkZ, 4, 0, 35);
+			this.runGenerator(polarbearOre, world, random, chunkX, chunkZ, 5, 0, 35);
+//			this.runGenerator(witherskeletonOre, world, random, chunkX, chunkZ, 5, 0, 35);
+//			this.runGenerator(huskOre, world, random, chunkX, chunkZ, 6, 0, 35);
+//			this.runGenerator(strayOre, world, random, chunkX, chunkZ, 6, 0, 35);
+//			this.runGenerator(muleOre, world, random, chunkX, chunkZ, 6, 0, 35);
+//			this.runGenerator(donkeyOre, world, random, chunkX, chunkZ, 6, 0, 35);
+//			this.runGenerator(skeletonhorseOre, world, random, chunkX, chunkZ, 5, 0, 35);
+//			this.runGenerator(zombiehorseOre, world, random, chunkX, chunkZ, 5, 0, 35);
 			
 			break;
 		case -1: //nether

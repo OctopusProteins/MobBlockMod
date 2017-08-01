@@ -1,4 +1,4 @@
-package com.MobBlockMod.Tree;
+package com.MobBlockMod.tree;
 
 import com.MobBlockMod.Registry;
 
