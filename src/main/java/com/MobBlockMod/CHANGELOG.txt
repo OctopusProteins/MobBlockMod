@@ -102,9 +102,16 @@ Added new IAttributes
 *********************************
 Update to 1.10
 *********************************
-
+2.6.6
+*********************************
+Added stuff for polar bear
+Added stuff to support 1.11 update
+Removed @Dep tags
+Fixed unobtainable items
+*********************************
 PLANNED
-
+Updated to 1.10.2
+Update to 1.11
 
 FUTURE
 *********************************
