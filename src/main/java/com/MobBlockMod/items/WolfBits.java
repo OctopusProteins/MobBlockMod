@@ -13,7 +13,7 @@ public class WolfBits extends Item
 	 //
 	public WolfBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

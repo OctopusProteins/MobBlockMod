@@ -13,7 +13,7 @@ public class WoodPulp extends Item
 	 //
 	public WoodPulp() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

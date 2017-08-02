@@ -13,7 +13,7 @@ public class SheepBits extends Item
 	 //
 	public SheepBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

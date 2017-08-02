@@ -13,7 +13,7 @@ public class GrassShreds extends Item
 	 //
 	public GrassShreds() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

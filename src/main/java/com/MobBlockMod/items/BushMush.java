@@ -13,7 +13,7 @@ public class BushMush extends Item
 	 //
 	public BushMush() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

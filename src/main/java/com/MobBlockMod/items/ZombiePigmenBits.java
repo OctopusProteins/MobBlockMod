@@ -13,7 +13,7 @@ public class ZombiePigmenBits extends Item
 
 	public ZombiePigmenBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -16,8 +16,7 @@ public class ElderGuardianOre extends Block
 	        public ElderGuardianOre() 
 	        {
 	                super(Material.GROUND);
-	                //change this at 1.11 update
-	                //GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);

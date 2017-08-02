@@ -13,7 +13,7 @@ public class StemSlice extends Item
 	
 	public StemSlice() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

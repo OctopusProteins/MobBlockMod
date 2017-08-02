@@ -13,7 +13,7 @@ public class EndermiteBits extends Item
 	 
 	public EndermiteBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

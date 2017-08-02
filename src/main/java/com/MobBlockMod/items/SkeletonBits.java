@@ -13,7 +13,7 @@ public class SkeletonBits extends Item
 	 //
 	public SkeletonBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

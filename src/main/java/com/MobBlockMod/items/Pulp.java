@@ -13,7 +13,7 @@ public class Pulp extends Item
 	 //
 	public Pulp() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

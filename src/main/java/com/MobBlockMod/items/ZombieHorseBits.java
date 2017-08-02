@@ -13,7 +13,7 @@ public class ZombieHorseBits extends Item
 	 
 	public ZombieHorseBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

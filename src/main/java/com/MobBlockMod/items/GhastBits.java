@@ -13,7 +13,7 @@ public class GhastBits extends Item
 	 //
 	public GhastBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

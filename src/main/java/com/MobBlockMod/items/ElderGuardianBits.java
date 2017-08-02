@@ -14,7 +14,7 @@ public class ElderGuardianBits extends Item
 	public ElderGuardianBits() 
 	{
 		//for 1.11 update
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

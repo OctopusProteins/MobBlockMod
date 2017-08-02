@@ -13,7 +13,7 @@ public class SquidBits extends Item
 	 //
 	public SquidBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

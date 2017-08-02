@@ -16,7 +16,7 @@ public class PolarBearOre extends Block
 	        public PolarBearOre() 
 	        {
 	                super(Material.GROUND);
-	                GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);

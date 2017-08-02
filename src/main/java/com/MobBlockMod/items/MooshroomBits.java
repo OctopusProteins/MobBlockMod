@@ -13,7 +13,7 @@ public class MooshroomBits extends Item
 	 //
 	public MooshroomBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

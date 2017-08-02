@@ -9,7 +9,7 @@ public class TabBlock extends Block{
 	
 	public TabBlock() {
 		super(Material.AIR);
-		GameRegistry.registerBlock(this, name);
+		setRegistryName(name);
         setUnlocalizedName(name);
 	}
 	public String getName()

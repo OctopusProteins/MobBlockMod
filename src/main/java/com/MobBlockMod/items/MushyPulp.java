@@ -13,7 +13,7 @@ public class MushyPulp extends Item
 	 //
 	public MushyPulp() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

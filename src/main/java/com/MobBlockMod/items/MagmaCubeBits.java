@@ -13,7 +13,7 @@ public class MagmaCubeBits extends Item
 	 //
 	public MagmaCubeBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

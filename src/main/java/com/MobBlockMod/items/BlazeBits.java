@@ -13,7 +13,7 @@ public class BlazeBits extends Item
 	
 	public BlazeBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

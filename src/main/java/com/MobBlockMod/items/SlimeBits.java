@@ -13,7 +13,7 @@ public class SlimeBits extends Item
 	 //
 	public SlimeBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

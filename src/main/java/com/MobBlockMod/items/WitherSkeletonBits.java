@@ -13,7 +13,7 @@ public class WitherSkeletonBits extends Item
 	 
 	public WitherSkeletonBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

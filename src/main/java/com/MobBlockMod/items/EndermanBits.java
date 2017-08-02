@@ -13,7 +13,7 @@ public class EndermanBits extends Item
 	 //
 	public EndermanBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

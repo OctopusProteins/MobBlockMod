@@ -13,7 +13,7 @@ public class ShulkerBits extends Item
 	 //
 	public ShulkerBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

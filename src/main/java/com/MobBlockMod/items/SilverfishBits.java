@@ -13,7 +13,7 @@ public class SilverfishBits extends Item
 	 //
 	public SilverfishBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

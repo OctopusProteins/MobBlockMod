@@ -13,7 +13,7 @@ public class PigBits extends Item
 	 //
 	public PigBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -15,7 +15,7 @@ public class DwarfLog extends Block
 	        public DwarfLog() 
 	        {
 	                super(Material.WOOD);
-	                GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(2.5F);

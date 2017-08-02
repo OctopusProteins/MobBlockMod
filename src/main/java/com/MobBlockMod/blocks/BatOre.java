@@ -14,7 +14,7 @@ public class BatOre extends Block
 	        public BatOre() 
 	        {
 	                super(Material.GROUND);
-	                GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);
@@ -26,4 +26,4 @@ public class BatOre extends Block
 	        	return name;
 	        }
 
-}
+} 

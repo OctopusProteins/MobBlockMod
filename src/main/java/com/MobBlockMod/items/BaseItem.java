@@ -13,7 +13,7 @@ public class BaseItem extends Item
 	 
 	public BaseItem() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

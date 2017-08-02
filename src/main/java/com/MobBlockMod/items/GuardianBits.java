@@ -13,7 +13,7 @@ public class GuardianBits extends Item
 	 
 	public GuardianBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

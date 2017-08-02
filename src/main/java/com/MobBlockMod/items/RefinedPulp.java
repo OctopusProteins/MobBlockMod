@@ -13,7 +13,7 @@ public class RefinedPulp extends Item
 	 //
 	public RefinedPulp() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

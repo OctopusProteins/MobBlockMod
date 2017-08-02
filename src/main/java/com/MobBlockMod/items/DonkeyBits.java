@@ -12,7 +12,7 @@ public class DonkeyBits extends Item
 	 
 	public DonkeyBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

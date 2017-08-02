@@ -13,7 +13,7 @@ public class OcelotBits extends Item
 	 //
 	public OcelotBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

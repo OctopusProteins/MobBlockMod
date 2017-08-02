@@ -16,7 +16,7 @@ public class HuskOre extends Block
 	        public HuskOre() 
 	        {
 	                super(Material.GROUND);
-	                //GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);

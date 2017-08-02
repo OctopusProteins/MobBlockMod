@@ -13,7 +13,7 @@ public class ChickenBits extends Item
 	 //
 	public ChickenBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -13,7 +13,7 @@ public class CaveSpiderBits extends Item
 	 //
 	public CaveSpiderBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

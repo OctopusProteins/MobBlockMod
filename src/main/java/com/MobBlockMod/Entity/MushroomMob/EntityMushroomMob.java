@@ -159,8 +159,8 @@ public class EntityMushroomMob extends EntityTameable{
         }
 
         if (itemstack != null && itemstack.getItem() == Registry.mushroomCompound && this.isTamed() == false) {
-            if (!p_70085_1_.capabilities.isCreativeMode) --itemstack.stackSize;
-            if (itemstack.stackSize <= 0) p_70085_1_.inventory.setInventorySlotContents(p_70085_1_.inventory.currentItem, (ItemStack)null);
+            if (!p_70085_1_.capabilities.isCreativeMode) itemstack.func_190918_g(1);
+            if (itemstack.func_190916_E() <= 0) p_70085_1_.inventory.setInventorySlotContents(p_70085_1_.inventory.currentItem, (ItemStack)null);
             if (!this.worldObj.isRemote) {
                 if (this.rand.nextInt(3) == 0) {
                     this.setTamed(true);
@@ -176,7 +176,7 @@ public class EntityMushroomMob extends EntityTameable{
             return true;
         }
 
-        return super.processInteract(p_70085_1_, p_184645_2_, stack);
+        return super.processInteract(p_70085_1_, p_184645_2_);
     }
 	
 	public boolean isBreedingItem(ItemStack p_70877_1_) {

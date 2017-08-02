@@ -13,7 +13,7 @@ public class BushEgg extends Item
 	 //
 	public BushEgg() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

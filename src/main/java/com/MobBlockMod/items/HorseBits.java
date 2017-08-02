@@ -13,7 +13,7 @@ public class HorseBits extends Item
 	 //
 	public HorseBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

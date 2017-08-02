@@ -13,7 +13,7 @@ public class HuskBits extends Item
 	 
 	public HuskBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

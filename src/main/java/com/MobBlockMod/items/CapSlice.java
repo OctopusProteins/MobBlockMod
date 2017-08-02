@@ -13,7 +13,7 @@ public class CapSlice extends Item
 	 //
 	public CapSlice() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

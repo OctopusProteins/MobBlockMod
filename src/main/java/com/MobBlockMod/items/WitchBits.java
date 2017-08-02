@@ -13,7 +13,7 @@ public class WitchBits extends Item
 	 //
 	public WitchBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

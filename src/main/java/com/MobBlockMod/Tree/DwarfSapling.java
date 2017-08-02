@@ -35,10 +35,10 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 	public DwarfSapling() {
 		super(Material.PLANTS);
 		setUnlocalizedName(name);
+		setRegistryName(name);
 		this.setTickRandomly(true);
 		this.setDefaultState(this.getDefaultState().withProperty(STAGE, 0));
 		setCreativeTab(Registry.mobBlockModTab);
-		GameRegistry.registerBlock(this, name);
 	}
 	@Override
 	protected BlockStateContainer createBlockState() {

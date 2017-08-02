@@ -13,7 +13,7 @@ public class VillagerBits extends Item
 	 //
 	public VillagerBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -13,7 +13,7 @@ public class BatBits extends Item
 	
 	public BatBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

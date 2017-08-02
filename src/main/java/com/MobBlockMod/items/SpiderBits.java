@@ -13,7 +13,7 @@ public class SpiderBits extends Item
 	 //
 	public SpiderBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -13,7 +13,7 @@ public class GeneEgg extends Item
 	 //
 	public GeneEgg() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -28,7 +28,7 @@ public class DwarfLeaf extends Block implements IShearable
 	        public DwarfLeaf() 
 	        {
 	                super(Material.LEAVES);
-	                GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(0.2F);

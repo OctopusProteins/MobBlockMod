@@ -13,10 +13,10 @@ public class MobBlockModTab extends CreativeTabs {
 	}
 	
 	@Override
-	public Item getTabIconItem() 
+	public ItemStack getTabIconItem() 
 	{
 		ItemStack itemStack = new ItemStack(Registry.tabBlock);
-		return itemStack.getItem();
+		return itemStack;
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.MobBlockMod.Entity.MushroomMob;
+  package com.MobBlockMod.Entity.MushroomMob;
 
 import java.util.BitSet;
 
@@ -23,7 +23,7 @@ public class EntityMushroom {
 	private EntityMushroom() {
 		availableIndicies = new BitSet();
 		availableIndicies.set(1, 255);
-		for (Object id : EntityList.ID_TO_CLASS.keySet()) {
+		for (Object id : EntityList.getID()) {
 			availableIndicies.clear((Integer) id);
 		}
 	}
@@ -46,7 +46,7 @@ public class EntityMushroom {
 	
 	public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor){
 		int randomId = findGlobalUniqueEntityId();
-		EntityRegistry.registerModEntity(entityClass, entityName, randomId, MobBlockMod.instance, 64, 1, true, solidColor, spotColor);
+		EntityRegistry.registerModEntity(null, entityClass, entityName, randomId, MobBlockMod.instance, 64, 1, true, solidColor, spotColor);
 		
 	}
 

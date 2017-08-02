@@ -14,7 +14,7 @@ public class ZombiePigmenOre extends Block
 	        public ZombiePigmenOre() 
 	        {
 	                super(Material.GROUND);
-	                GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);

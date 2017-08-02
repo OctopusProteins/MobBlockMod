@@ -13,7 +13,7 @@ public class CowBits extends Item
 	 //
 	public CowBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

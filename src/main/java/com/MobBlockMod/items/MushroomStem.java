@@ -13,7 +13,7 @@ public class MushroomStem extends Item
 	 //
 	public MushroomStem() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

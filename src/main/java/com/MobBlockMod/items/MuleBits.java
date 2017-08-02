@@ -13,7 +13,7 @@ public class MuleBits extends Item
 	 
 	public MuleBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

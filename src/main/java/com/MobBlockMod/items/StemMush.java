@@ -13,7 +13,7 @@ public class StemMush extends Item
 	 //
 	public StemMush() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -13,7 +13,7 @@ public class StrayBits extends Item
 	 
 	public StrayBits() 
 	{
-		//GameRegistry.registerItem(this, name);
+		// 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

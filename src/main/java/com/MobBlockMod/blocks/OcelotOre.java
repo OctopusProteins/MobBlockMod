@@ -14,8 +14,8 @@ public class OcelotOre extends Block
 	        public OcelotOre() 
 	        {
 	                super(Material.GROUND);
-	                GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
+	                setRegistryName(name);
 	                setCreativeTab(Registry.mobBlockModTab);
 	                setHardness(1.8F);
 	      	        setHarvestLevel("pickaxe", 0);

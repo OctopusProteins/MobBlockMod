@@ -13,7 +13,7 @@ public class PolarBearBits extends Item
 	 
 	public PolarBearBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

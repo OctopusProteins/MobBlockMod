@@ -13,7 +13,7 @@ public class CreeperBits extends Item
 	 //
 	public CreeperBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

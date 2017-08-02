@@ -13,7 +13,7 @@ public class RabbitBits extends Item
 	 //
 	public RabbitBits() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

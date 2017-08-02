@@ -13,7 +13,7 @@ public class CapMush extends Item
 	 //
 	public CapMush() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

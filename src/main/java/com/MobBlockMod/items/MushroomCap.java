@@ -13,7 +13,7 @@ public class MushroomCap extends Item
 	 //
 	public MushroomCap() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    

@@ -13,7 +13,7 @@ public class MushroomCompound extends Item
 	 //
 	public MushroomCompound() 
 	{
-		GameRegistry.registerItem(this, name);
+		 
 		setCreativeTab(Registry.mobBlockModTab);
 	    setUnlocalizedName(name);
 	    
