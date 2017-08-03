@@ -158,17 +158,17 @@ public class EntityMushroomMob extends EntityTameable{
         }
 
         if (itemstack != null && itemstack.getItem() == ModItems.mushroomCompound && this.isTamed() == false) {
-            if (!p_70085_1_.capabilities.isCreativeMode) itemstack.func_190918_g(1);
-            if (itemstack.func_190916_E() <= 0) p_70085_1_.inventory.setInventorySlotContents(p_70085_1_.inventory.currentItem, (ItemStack)null);
-            if (!this.worldObj.isRemote) {
+            if (!p_70085_1_.capabilities.isCreativeMode) itemstack.shrink(1);
+            if (itemstack.getCount() <= 0) p_70085_1_.inventory.setInventorySlotContents(p_70085_1_.inventory.currentItem, (ItemStack)null);
+            if (!this.world.isRemote) {
                 if (this.rand.nextInt(3) == 0) {
                     this.setTamed(true);
                     this.setOwnerId(p_70085_1_.getUniqueID());
                     this.playTameEffect(true);
-                    this.worldObj.setEntityState(this, (byte)7);
+                    this.world.setEntityState(this, (byte)7);
                 }else{
                     this.playTameEffect(false);
-                    this.worldObj.setEntityState(this, (byte)6);
+                    this.world.setEntityState(this, (byte)6);
                 }
             }
 
@@ -186,7 +186,7 @@ public class EntityMushroomMob extends EntityTameable{
 	
 	@Override
 	public EntityMushroomMob createChild(EntityAgeable p_90011_1_) {
-		EntityMushroomMob entity = new EntityMushroomMob(this.worldObj);
+		EntityMushroomMob entity = new EntityMushroomMob(this.world);
         UUID uuid = this.getOwnerId();
 
         if (uuid != null)

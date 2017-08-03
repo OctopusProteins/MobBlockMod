@@ -121,6 +121,12 @@ Reorganized classes again - ALOT
 MODID to lc
 Props to @csb987 - Thank you!
 *********************************
+2.7.1
+*********************************
+Update to 1.11.2
+Fixed lang issue
+Fixed 'Leaf Pillars' XP
+*********************************
 
 PLANNED
 Updated to 1.10.2

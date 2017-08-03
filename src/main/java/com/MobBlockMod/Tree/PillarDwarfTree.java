@@ -82,11 +82,7 @@ public void setNoBlock(World world, BlockPos blockPos) {
 	}
 	
 	public void buildBlock(World world, BlockPos blockPos, IBlockState block, int meta) {
-		
-		if (world.isAirBlock(blockPos) || world.getBlockState(blockPos).getBlock().isLeaves(block, world, blockPos)) {
-			
 			world.setBlockState(blockPos, block);
-		}
 	}
 
 	@Override
