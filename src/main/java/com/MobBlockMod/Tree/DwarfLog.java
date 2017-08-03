@@ -1,12 +1,11 @@
 package com.MobBlockMod.tree;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class DwarfLog extends Block 
 {
@@ -17,7 +16,7 @@ public class DwarfLog extends Block
 	                super(Material.WOOD);
 	                setRegistryName(name);
 	                setUnlocalizedName(name);
-	                setCreativeTab(Registry.mobBlockModTab);
+	                setCreativeTab(ModTabs.mobBlockModTab);
 	                setHardness(2.5F);
 	                this.setSoundType(SoundType.WOOD);
 	                Blocks.FIRE.setFireInfo(this, 8, 30);

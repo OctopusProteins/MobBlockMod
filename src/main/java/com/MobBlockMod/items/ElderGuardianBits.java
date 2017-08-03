@@ -1,9 +1,8 @@
 package com.MobBlockMod.items;//Change this
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 
@@ -15,9 +14,9 @@ public class ElderGuardianBits extends Item
 	{
 		//for 1.11 update
 		// 
-		setCreativeTab(Registry.mobBlockModTab);
+		setCreativeTab(ModTabs.mobBlockModTab);
 	    setUnlocalizedName(name);
-	    
+	    setRegistryName(name);
 	}
 	        
 	public String getName()

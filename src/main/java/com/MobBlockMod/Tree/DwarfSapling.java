@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
@@ -21,7 +21,6 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -38,7 +37,7 @@ public class DwarfSapling extends BlockBush implements IGrowable, IPlantable {
 		setRegistryName(name);
 		this.setTickRandomly(true);
 		this.setDefaultState(this.getDefaultState().withProperty(STAGE, 0));
-		setCreativeTab(Registry.mobBlockModTab);
+		setCreativeTab(ModTabs.mobBlockModTab);
 	}
 	@Override
 	protected BlockStateContainer createBlockState() {

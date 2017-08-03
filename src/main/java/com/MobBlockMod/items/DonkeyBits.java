@@ -1,6 +1,6 @@
 package com.MobBlockMod.items;//Change this
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.item.Item;
 
@@ -13,9 +13,9 @@ public class DonkeyBits extends Item
 	public DonkeyBits() 
 	{
 		// 
-		setCreativeTab(Registry.mobBlockModTab);
+		setCreativeTab(ModTabs.mobBlockModTab);
 	    setUnlocalizedName(name);
-	    
+	    setRegistryName(name);
 	}
 	        
 	public String getName()

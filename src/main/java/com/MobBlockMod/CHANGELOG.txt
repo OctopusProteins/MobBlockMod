@@ -117,8 +117,10 @@ Update to 1.10.2
 *********************************
 Update to 1.11
 Added removed added items
-Reorganized classes again
+Reorganized classes again - ALOT
 MODID to lc
+Props to @csb987 - Thank you!
+*********************************
 
 PLANNED
 Updated to 1.10.2

@@ -3,7 +3,8 @@ package com.MobBlockMod.Entity.MushroomMob;
 
 import java.util.UUID;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModItems;
+import com.MobBlockMod.init.ModSounds;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityAgeable;
@@ -22,12 +23,10 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
-import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.monster.EntityGhast;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntityTameable;
-import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -126,22 +125,22 @@ public class EntityMushroomMob extends EntityTameable{
 	protected void dropFewItems(boolean p_70628_1_, int p_70628_2_)
     {
         if (rand.nextInt(2) == 1) {
-        	this.dropItem(Registry.mushroomCap, 1);
+        	this.dropItem(ModItems.mushroomCap, 1);
         }
         
         if(rand.nextInt(3) == 1){
-        	this.dropItem(Registry.mushroomStem, 1);
+        	this.dropItem(ModItems.mushroomStem, 1);
         }
     }
 
 	protected SoundEvent getAmbientSound() {
-		return Registry.mushroomLive;
+		return ModSounds.mushroomLive;
 	}
 	protected SoundEvent getHurtSound() {
-		return Registry.mushroomHurt;
+		return ModSounds.mushroomHurt;
 	}
 	protected SoundEvent getDeathSound() {
-		return Registry.mushroomDie;
+		return ModSounds.mushroomDie;
 	}
 
 	
@@ -150,15 +149,15 @@ public class EntityMushroomMob extends EntityTameable{
     }
 	
 	
-	public boolean processInteract(EntityPlayer p_70085_1_, EnumHand p_184645_2_, ItemStack stack) {
+	public boolean processInteract(EntityPlayer p_70085_1_, EnumHand p_184645_2_) {
 		
-        ItemStack itemstack = p_70085_1_.inventory.getCurrentItem();
+		ItemStack itemstack = p_70085_1_.getHeldItem(p_184645_2_);
         
-        if (itemstack != null && itemstack.getItem() == Registry.mushroomCompound && this.isTamed() == true) {
+        if (itemstack != null && itemstack.getItem() == ModItems.mushroomCompound && this.isTamed() == true) {
         	this.heal(10.0F);
         }
 
-        if (itemstack != null && itemstack.getItem() == Registry.mushroomCompound && this.isTamed() == false) {
+        if (itemstack != null && itemstack.getItem() == ModItems.mushroomCompound && this.isTamed() == false) {
             if (!p_70085_1_.capabilities.isCreativeMode) itemstack.func_190918_g(1);
             if (itemstack.func_190916_E() <= 0) p_70085_1_.inventory.setInventorySlotContents(p_70085_1_.inventory.currentItem, (ItemStack)null);
             if (!this.worldObj.isRemote) {
@@ -180,7 +179,7 @@ public class EntityMushroomMob extends EntityTameable{
     }
 	
 	public boolean isBreedingItem(ItemStack p_70877_1_) {
-		 ItemStack breed  = new ItemStack(Registry.mushroomCompound);
+		 ItemStack breed  = new ItemStack(ModItems.mushroomCompound);
 		 if (p_70877_1_ != breed) return true;
 		 return false;
 	}
