@@ -190,6 +190,10 @@ public class ModBlocks
 		event.getRegistry().register(new ItemBlock(skeletonhorseOre).setRegistryName(skeletonhorseOre.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(zombiehorseOre).setRegistryName(zombiehorseOre.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(tabBlock).setRegistryName(tabBlock.getRegistryName()));
+		
+		event.getRegistry().register(new ItemBlock(dwarfLog).setRegistryName(dwarfLog.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(dwarfLeaf).setRegistryName(dwarfLeaf.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(dwarfSapling).setRegistryName(dwarfSapling.getRegistryName()));
 	}
 
 
@@ -235,6 +239,9 @@ public class ModBlocks
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(skeletonhorseOre), 0, new ModelResourceLocation(Item.getItemFromBlock(skeletonhorseOre).getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(zombiehorseOre), 0, new ModelResourceLocation(Item.getItemFromBlock(zombiehorseOre).getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(tabBlock), 0, new ModelResourceLocation(Item.getItemFromBlock(tabBlock).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(dwarfLeaf), 0, new ModelResourceLocation(Item.getItemFromBlock(dwarfLeaf).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(dwarfLog), 0, new ModelResourceLocation(Item.getItemFromBlock(dwarfLog).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(dwarfSapling), 0, new ModelResourceLocation(Item.getItemFromBlock(dwarfSapling).getRegistryName(), "inventory"));
 	}
 
 }

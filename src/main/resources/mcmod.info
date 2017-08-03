@@ -3,7 +3,7 @@
   "modid": "mobblockmod",
   "name": "Mob Block Mod",
   "description": "This mod allows you to craft spawn eggs.",
-  "version": "2.7",
+  "version": "2.7.1",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
