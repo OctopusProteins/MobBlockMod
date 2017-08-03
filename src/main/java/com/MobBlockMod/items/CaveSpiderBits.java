@@ -1,9 +1,8 @@
 package com.MobBlockMod.items;//Change this
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 
@@ -13,10 +12,10 @@ public class CaveSpiderBits extends Item
 	 //
 	public CaveSpiderBits() 
 	{
-		GameRegistry.registerItem(this, name);
-		setCreativeTab(Registry.mobBlockModTab);
+		 
+		setCreativeTab(ModTabs.mobBlockModTab);
 	    setUnlocalizedName(name);
-	    
+	    setRegistryName(name);
 	}
 	        
 	public String getName()

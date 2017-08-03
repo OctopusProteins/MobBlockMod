@@ -113,7 +113,14 @@ Fixed unobtainable items
 *********************************
 Update to 1.10.2
 *********************************
-
+2.7
+*********************************
+Update to 1.11
+Added removed added items
+Reorganized classes again - ALOT
+MODID to lc
+Props to @csb987 - Thank you!
+*********************************
 
 PLANNED
 Updated to 1.10.2

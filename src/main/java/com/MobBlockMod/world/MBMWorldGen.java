@@ -2,7 +2,7 @@ package com.MobBlockMod.world;
 
 import java.util.Random;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModBlocks;
 
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
@@ -56,46 +56,47 @@ public class MBMWorldGen implements IWorldGenerator{
 	private WorldGenerator zombiehorseOre;
 	
 	public MBMWorldGen() {
-		this.batOre = new WorldGenMinable(Registry.batOre.getDefaultState(), 8);
-		this.chickenOre = new WorldGenMinable(Registry.chickenOre.getDefaultState(), 6);
-		this.cowOre = new WorldGenMinable(Registry.cowOre.getDefaultState(), 7);
-		this.mooshroomOre = new WorldGenMinable(Registry.mooshroomOre.getDefaultState(), 5);
-		this.pigOre = new WorldGenMinable(Registry.pigOre.getDefaultState(), 6);
-		this.sheepOre = new WorldGenMinable(Registry.sheepOre.getDefaultState(), 6);
-		this.creeperOre = new WorldGenMinable(Registry.creeperOre.getDefaultState(), 5);
-		this.zombieOre = new WorldGenMinable(Registry.zombieOre.getDefaultState(), 6);
-		this.skeletonOre = new WorldGenMinable(Registry.skeletonOre.getDefaultState(), 5);
-		this.spiderOre = new WorldGenMinable(Registry.spiderOre.getDefaultState(), 6);
-		this.wolfOre = new WorldGenMinable(Registry.wolfOre.getDefaultState(), 4);
-		this.villagerOre = new WorldGenMinable(Registry.villagerOre.getDefaultState(), 3);
-		this.ocelotOre = new WorldGenMinable(Registry.ocelotOre.getDefaultState(), 4);
-		this.horseOre = new WorldGenMinable(Registry.horseOre.getDefaultState(), 4);
-		this.rabbitOre = new WorldGenMinable(Registry.rabbitOre.getDefaultState(), 5);
-		this.witchOre = new WorldGenMinable(Registry.witchOre.getDefaultState(), 4);
-		this.slimeOre = new WorldGenMinable(Registry.slimeOre.getDefaultState(), 7);
-		this.batOre = new WorldGenMinable(Registry.batOre.getDefaultState(), 8);
-		this.squidOre = new WorldGenMinable(Registry.squidOre.getDefaultState(), 7);
-		this.cavespiderOre = new WorldGenMinable(Registry.cavespiderOre.getDefaultState(), 4);
-		this.silverfishOre = new WorldGenMinable(Registry.silverfishOre.getDefaultState(), 5);
-		this.guardianOre = new WorldGenMinable(Registry.guardianOre.getDefaultState(), 4);
-		//this.elderguardianOre = new WorldGenMinable(Registry.elderguardianOre.getDefaultState(), 3);
-		this.polarbearOre = new WorldGenMinable(Registry.polarbearOre.getDefaultState(), 5);
-//		this.witherskeletonOre = new WorldGenMinable(Registry.witherskeletonOre.getDefaultState(), 4);
-//		this.huskOre = new WorldGenMinable(Registry.huskOre.getDefaultState(), 5);
-//		this.strayOre = new WorldGenMinable(Registry.strayOre.getDefaultState(), 5);
-//		this.muleOre = new WorldGenMinable(Registry.muleOre.getDefaultState(), 5);
-//		this.strayOre = new WorldGenMinable(Registry.strayOre.getDefaultState(), 5);
-//		this.skeletonhorseOre = new WorldGenMinable(Registry.skeletonhorseOre.getDefaultState(), 4);
-//		this.zombiehorseOre = new WorldGenMinable(Registry.zombiehorseOre.getDefaultState(), 4);
+		this.batOre = new WorldGenMinable(ModBlocks.batOre.getDefaultState(), 8);
+		this.chickenOre = new WorldGenMinable(ModBlocks.chickenOre.getDefaultState(), 6);
+		this.cowOre = new WorldGenMinable(ModBlocks.cowOre.getDefaultState(), 7);
+		this.mooshroomOre = new WorldGenMinable(ModBlocks.mooshroomOre.getDefaultState(), 5);
+		this.pigOre = new WorldGenMinable(ModBlocks.pigOre.getDefaultState(), 6);
+		this.sheepOre = new WorldGenMinable(ModBlocks.sheepOre.getDefaultState(), 6);
+		this.creeperOre = new WorldGenMinable(ModBlocks.creeperOre.getDefaultState(), 5);
+		this.zombieOre = new WorldGenMinable(ModBlocks.zombieOre.getDefaultState(), 6);
+		this.skeletonOre = new WorldGenMinable(ModBlocks.skeletonOre.getDefaultState(), 5);
+		this.spiderOre = new WorldGenMinable(ModBlocks.spiderOre.getDefaultState(), 6);
+		this.wolfOre = new WorldGenMinable(ModBlocks.wolfOre.getDefaultState(), 4);
+		this.villagerOre = new WorldGenMinable(ModBlocks.villagerOre.getDefaultState(), 3);
+		this.ocelotOre = new WorldGenMinable(ModBlocks.ocelotOre.getDefaultState(), 4);
+		this.horseOre = new WorldGenMinable(ModBlocks.horseOre.getDefaultState(), 4);
+		this.rabbitOre = new WorldGenMinable(ModBlocks.rabbitOre.getDefaultState(), 5);
+		this.witchOre = new WorldGenMinable(ModBlocks.witchOre.getDefaultState(), 4);
+		this.slimeOre = new WorldGenMinable(ModBlocks.slimeOre.getDefaultState(), 7);
+		this.batOre = new WorldGenMinable(ModBlocks.batOre.getDefaultState(), 8);
+		this.squidOre = new WorldGenMinable(ModBlocks.squidOre.getDefaultState(), 7);
+		this.cavespiderOre = new WorldGenMinable(ModBlocks.cavespiderOre.getDefaultState(), 4);
+		this.silverfishOre = new WorldGenMinable(ModBlocks.silverfishOre.getDefaultState(), 5);
+		this.guardianOre = new WorldGenMinable(ModBlocks.guardianOre.getDefaultState(), 4);
+		this.elderguardianOre = new WorldGenMinable(ModBlocks.elderguardianOre.getDefaultState(), 3);
+		this.polarbearOre = new WorldGenMinable(ModBlocks.polarbearOre.getDefaultState(), 5);
+		this.witherskeletonOre = new WorldGenMinable(ModBlocks.witherskeletonOre.getDefaultState(), 4);
+		this.huskOre = new WorldGenMinable(ModBlocks.huskOre.getDefaultState(), 5);
+		this.strayOre = new WorldGenMinable(ModBlocks.strayOre.getDefaultState(), 5);
+		this.muleOre = new WorldGenMinable(ModBlocks.muleOre.getDefaultState(), 5);
+		this.donkeyOre = new WorldGenMinable(ModBlocks.donkeyOre.getDefaultState(), 5);
+		this.strayOre = new WorldGenMinable(ModBlocks.strayOre.getDefaultState(), 5);
+		this.skeletonhorseOre = new WorldGenMinable(ModBlocks.skeletonhorseOre.getDefaultState(), 4);
+		this.zombiehorseOre = new WorldGenMinable(ModBlocks.zombiehorseOre.getDefaultState(), 4);
 		
-		this.shulkerOre = new WorldGenMinable(Registry.shulkerOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
-		this.endermanOre = new WorldGenMinable(Registry.endermanOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.END_STONE));
-		this.endermiteOre = new WorldGenMinable(Registry.endermiteOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.END_STONE));
+		this.shulkerOre = new WorldGenMinable(ModBlocks.shulkerOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.END_STONE));
+		this.endermanOre = new WorldGenMinable(ModBlocks.endermanOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.END_STONE));
+		this.endermiteOre = new WorldGenMinable(ModBlocks.endermiteOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.END_STONE));
 		
-		this.ghastOre = new WorldGenMinable(Registry.ghastOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.NETHERRACK));
-		this.zombiepigmenOre = new WorldGenMinable(Registry.zombiepigmenOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.NETHERRACK));
-		this.blazeOre = new WorldGenMinable(Registry.blazeOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));
-		this.magmacubeOre = new WorldGenMinable(Registry.magmacubeOre.getDefaultState(), 7, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.ghastOre = new WorldGenMinable(ModBlocks.ghastOre.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.zombiepigmenOre = new WorldGenMinable(ModBlocks.zombiepigmenOre.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.blazeOre = new WorldGenMinable(ModBlocks.blazeOre.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		this.magmacubeOre = new WorldGenMinable(ModBlocks.magmacubeOre.getDefaultState(), 7, BlockMatcher.forBlock(Blocks.NETHERRACK));
 	}
 	
 	@Override
@@ -126,15 +127,15 @@ public class MBMWorldGen implements IWorldGenerator{
 			this.runGenerator(cavespiderOre, world, random, chunkX, chunkZ, 4, 0, 35);
 			this.runGenerator(silverfishOre, world, random, chunkX, chunkZ, 5, 0, 35);
 			this.runGenerator(guardianOre, world, random, chunkX, chunkZ, 6, 0, 35);
-			//this.runGenerator(elderguardianOre, world, random, chunkX, chunkZ, 4, 0, 35);
+			this.runGenerator(elderguardianOre, world, random, chunkX, chunkZ, 4, 0, 35);
 			this.runGenerator(polarbearOre, world, random, chunkX, chunkZ, 5, 0, 35);
-//			this.runGenerator(witherskeletonOre, world, random, chunkX, chunkZ, 5, 0, 35);
-//			this.runGenerator(huskOre, world, random, chunkX, chunkZ, 6, 0, 35);
-//			this.runGenerator(strayOre, world, random, chunkX, chunkZ, 6, 0, 35);
-//			this.runGenerator(muleOre, world, random, chunkX, chunkZ, 6, 0, 35);
-//			this.runGenerator(donkeyOre, world, random, chunkX, chunkZ, 6, 0, 35);
-//			this.runGenerator(skeletonhorseOre, world, random, chunkX, chunkZ, 5, 0, 35);
-//			this.runGenerator(zombiehorseOre, world, random, chunkX, chunkZ, 5, 0, 35);
+			this.runGenerator(witherskeletonOre, world, random, chunkX, chunkZ, 5, 0, 35);
+			this.runGenerator(huskOre, world, random, chunkX, chunkZ, 6, 0, 35);
+			this.runGenerator(strayOre, world, random, chunkX, chunkZ, 6, 0, 35);
+			this.runGenerator(muleOre, world, random, chunkX, chunkZ, 6, 0, 35);
+			this.runGenerator(donkeyOre, world, random, chunkX, chunkZ, 6, 0, 35);
+			this.runGenerator(skeletonhorseOre, world, random, chunkX, chunkZ, 5, 0, 35);
+			this.runGenerator(zombiehorseOre, world, random, chunkX, chunkZ, 5, 0, 35);
 			
 			break;
 		case -1: //nether
@@ -150,7 +151,6 @@ public class MBMWorldGen implements IWorldGenerator{
 			this.runGenerator(shulkerOre, world, random, chunkX, chunkZ, 10, 8, 60);
 			break;
 		}
-		// TODO Auto-generated method stub
 		
 	}
 	

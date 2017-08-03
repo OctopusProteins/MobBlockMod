@@ -2,7 +2,7 @@ package com.MobBlockMod.tree;
 
 import java.util.Random;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -17,8 +17,8 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class PillarDwarfTree extends WorldGenerator implements IWorldGenerator {
 	
 
-	IBlockState trunkBlock = Registry.dwarfLog.getDefaultState();
-	IBlockState leafBlock = Registry.dwarfLeaf.getDefaultState();
+	IBlockState trunkBlock = ModBlocks.dwarfLog.getDefaultState();
+	IBlockState leafBlock = ModBlocks.dwarfLeaf.getDefaultState();
 	
 	@Override
 	public boolean generate(World world, Random random, BlockPos blockPos) {

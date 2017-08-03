@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModItems;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -17,7 +18,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IShearable;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -28,9 +28,9 @@ public class DwarfLeaf extends Block implements IShearable
 	        public DwarfLeaf() 
 	        {
 	                super(Material.LEAVES);
-	                GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
-	                setCreativeTab(Registry.mobBlockModTab);
+	                setCreativeTab(ModTabs.mobBlockModTab);
 	                setHardness(0.2F);
 	                this.setSoundType(SoundType.PLANT);
 	      	        Blocks.FIRE.setFireInfo(this, 8, 60);
@@ -56,7 +56,7 @@ public class DwarfLeaf extends Block implements IShearable
 				List<ItemStack> list = new ArrayList();
 				Random rand = new Random();
 				if (rand.nextInt(100) < 25) {
-					list.add(new ItemStack(Registry.pulp));
+					list.add(new ItemStack(ModItems.pulp));
 				}
 				return list;
 			}

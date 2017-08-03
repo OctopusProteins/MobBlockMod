@@ -1,14 +1,14 @@
 [
 {
-  "modid": "MobBlockMod",
+  "modid": "mobblockmod",
   "name": "Mob Block Mod",
   "description": "This mod allows you to craft spawn eggs.",
-  "version": "2.6.7",
+  "version": "2.7",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authors": ["OctopusProteins"],
-  "credits": "FML, OctopusProteins, Kerbal2Mun",
+  "credits": "FML, OctopusProteins, Kerbal2Mun, csb987 - for helping with 1.11",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

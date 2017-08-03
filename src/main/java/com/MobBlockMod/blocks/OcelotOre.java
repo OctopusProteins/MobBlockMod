@@ -1,11 +1,10 @@
 package com.MobBlockMod.blocks;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class OcelotOre extends Block 
 {
@@ -14,9 +13,9 @@ public class OcelotOre extends Block
 	        public OcelotOre() 
 	        {
 	                super(Material.GROUND);
-	                GameRegistry.registerBlock(this, name);
 	                setUnlocalizedName(name);
-	                setCreativeTab(Registry.mobBlockModTab);
+	                setRegistryName(name);
+	                setCreativeTab(ModTabs.mobBlockModTab);
 	                setHardness(1.8F);
 	      	        setHarvestLevel("pickaxe", 0);
 	      	      this.setSoundType(SoundType.STONE);

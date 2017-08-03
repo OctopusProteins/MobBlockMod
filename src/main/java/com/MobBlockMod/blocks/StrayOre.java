@@ -1,13 +1,10 @@
 package com.MobBlockMod.blocks;
 
-import com.MobBlockMod.Registry;
-import com.MobBlockMod.tabs.MobBlockModTab;
+import com.MobBlockMod.init.ModTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class StrayOre extends Block 
 {
@@ -16,9 +13,9 @@ public class StrayOre extends Block
 	        public StrayOre() 
 	        {
 	                super(Material.GROUND);
-	                //GameRegistry.registerBlock(this, name);
+	                setRegistryName(name);
 	                setUnlocalizedName(name);
-	                setCreativeTab(Registry.mobBlockModTab);
+	                setCreativeTab(ModTabs.mobBlockModTab);
 	                setHardness(1.8F);
 	                setHarvestLevel("pickaxe", 0);
 	                this.setSoundType(SoundType.STONE);

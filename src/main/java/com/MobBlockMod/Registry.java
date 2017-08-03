@@ -97,12 +97,12 @@ import com.MobBlockMod.tree.DwarfSapling;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
@@ -222,7 +222,7 @@ public class Registry {
 	public static SoundEvent mushroomHurt;
 	public static SoundEvent mushroomDie;
 	
-	public static void initBlocks() {
+	public static void init() {
 	    chickenOre = new ChickenOre();
 	    cowOre = new CowOre();	      
 	    mooshroomOre = new MooshroomOre();	      
@@ -266,366 +266,9 @@ public class Registry {
 	    dwarfSapling = new DwarfSapling();
 	    
 	    tabBlock = new TabBlock();
-	}
-	
-	public static void renderBlockItem() {
-		ItemModelMesher renderItem = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-		
-		renderItem.register(Item.getItemFromBlock(batOre), 0, new ModelResourceLocation(modid + ":" + ((BatOre) batOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(blazeOre), 0, new ModelResourceLocation(modid + ":" + ((BlazeOre) blazeOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(cavespiderOre), 0, new ModelResourceLocation(modid + ":" + ((CaveSpiderOre) cavespiderOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(chickenOre), 0, new ModelResourceLocation(modid + ":" + ((ChickenOre) chickenOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(cowOre), 0, new ModelResourceLocation(modid + ":" + ((CowOre) cowOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(creeperOre), 0, new ModelResourceLocation(modid + ":" + ((CreeperOre) creeperOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(endermanOre), 0, new ModelResourceLocation(modid + ":" + ((EndermanOre) endermanOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(ghastOre), 0, new ModelResourceLocation(modid + ":" + ((GhastOre) ghastOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(horseOre), 0, new ModelResourceLocation(modid + ":" + ((HorseOre) horseOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(magmacubeOre), 0, new ModelResourceLocation(modid + ":" + ((MagmaCubeOre) magmacubeOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(mooshroomOre), 0, new ModelResourceLocation(modid + ":" + ((MooshroomOre) mooshroomOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(ocelotOre), 0, new ModelResourceLocation(modid + ":" + ((OcelotOre) ocelotOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(pigOre), 0, new ModelResourceLocation(modid + ":" + ((PigOre) pigOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(rabbitOre), 0, new ModelResourceLocation(modid + ":" + ((RabbitOre) rabbitOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(sheepOre), 0, new ModelResourceLocation(modid + ":" + ((SheepOre) sheepOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(silverfishOre), 0, new ModelResourceLocation(modid + ":" + ((SilverfishOre) silverfishOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(skeletonOre), 0, new ModelResourceLocation(modid + ":" + ((SkeletonOre) skeletonOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(slimeOre), 0, new ModelResourceLocation(modid + ":" + ((SlimeOre) slimeOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(spiderOre), 0, new ModelResourceLocation(modid + ":" + ((SpiderOre) spiderOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(squidOre), 0, new ModelResourceLocation(modid + ":" + ((SquidOre) squidOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(villagerOre), 0, new ModelResourceLocation(modid + ":" + ((VillagerOre) villagerOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(witchOre), 0, new ModelResourceLocation(modid + ":" + ((WitchOre) witchOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(wolfOre), 0, new ModelResourceLocation(modid + ":" + ((WolfOre) wolfOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(zombieOre), 0, new ModelResourceLocation(modid + ":" + ((ZombieOre) zombieOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(zombiepigmenOre), 0, new ModelResourceLocation(modid + ":" + ((ZombiePigmenOre) zombiepigmenOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(endermiteOre), 0, new ModelResourceLocation(modid + ":" + ((EndermiteOre) endermiteOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(guardianOre), 0, new ModelResourceLocation(modid + ":" + ((GuardianOre) guardianOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(elderguardianOre), 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianOre) elderguardianOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(shulkerOre), 0, new ModelResourceLocation(modid + ":" + ((ShulkerOre) shulkerOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(polarbearOre), 0, new ModelResourceLocation(modid + ":" + ((PolarBearOre) polarbearOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(witherskeletonOre), 0, new ModelResourceLocation(modid + ":" + ((WitherSkeletonOre) witherskeletonOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(huskOre), 0, new ModelResourceLocation(modid + ":" + ((HuskOre) huskOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(strayOre), 0, new ModelResourceLocation(modid + ":" + ((StrayOre) strayOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(donkeyOre), 0, new ModelResourceLocation(modid + ":" + ((DonkeyOre) donkeyOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(muleOre), 0, new ModelResourceLocation(modid + ":" + ((MuleOre) muleOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(skeletonhorseOre), 0, new ModelResourceLocation(modid + ":" + ((SkeletonHorseOre) skeletonhorseOre).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(zombiehorseOre), 0, new ModelResourceLocation(modid + ":" + ((ZombieHorseOre) zombiehorseOre).getName(), "inventory"));
-		
-		renderItem.register(Item.getItemFromBlock(dwarfLog), 0, new ModelResourceLocation(modid + ":" + ((DwarfLog) dwarfLog).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(dwarfLeaf), 0, new ModelResourceLocation(modid + ":" + ((DwarfLeaf) dwarfLeaf).getName(), "inventory"));
-		renderItem.register(Item.getItemFromBlock(dwarfSapling), 0, new ModelResourceLocation(modid + ":" + ((DwarfSapling) dwarfSapling).getName(), "inventory"));
-		
-		renderItem.register(Item.getItemFromBlock(tabBlock), 0, new ModelResourceLocation(modid + ":" + ((TabBlock) tabBlock).getName(), "inventory"));
-	}
-	
-	public static void registerRecipes() {//method thats dealing the recipes 
-	
-	//shapeless
-		
-		GameRegistry.addShapelessRecipe(new ItemStack(bushMush), new ItemStack(grassShreds, 2));
-		GameRegistry.addShapelessRecipe(new ItemStack(pulp), new ItemStack(mushyPulp));
-		GameRegistry.addShapelessRecipe(new ItemStack(woodPulp), new ItemStack(dwarfLog));
-		GameRegistry.addShapelessRecipe(new ItemStack(refinedPulp), new ItemStack(woodPulp, 3));
-		GameRegistry.addShapelessRecipe(new ItemStack(capSlice, 2), new ItemStack(mushroomCap));
-		GameRegistry.addShapelessRecipe(new ItemStack(stemSlice, 2), new ItemStack(mushroomStem));
-	
-	GameRegistry.addRecipe(new ItemStack(bushEgg), new Object[] {
-			"BAB","DBE","CCC",
-			'A', Items.EGG,
-			'B', bushMush,
-			'C', refinedPulp,
-			'D', capMush,
-			'E', stemMush,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(mushroomCompound), new Object[] {
-			"AB ","BA ","   ",
-			'A', Blocks.RED_MUSHROOM,
-			'B', Blocks.BROWN_MUSHROOM,
-			
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(capMush), new Object[] {
-			"AA ","AA ","   ",
-			'A', capSlice,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(stemMush), new Object[] {
-			"AA ","AA ","   ",
-			'A', stemSlice,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(refinedPulp), new Object[] {
-			"AA ","AA ","   ",
-			'A', woodPulp,
-		
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(dwarfSapling), new Object[] {
-			" A ","AAA"," A ",
-			'A', pulp,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 93), new Object[] {
-			"AAA","ABA","AAA",
-			'A', chickenBits,
-			'B', geneEgg,
-			
-		});
-	
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 92), new Object[] {
-			"AAA","ABA","AAA",
-			'A', cowBits,
-			'B', geneEgg,
-		});
-						
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 96), new Object[] {
-			"AAA","ABA","AAA",
-			'A', mooshroomBits,
-			'B', geneEgg,
-			
-		});
-			
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 90), new Object[] {
-			"AAA","ABA","AAA",
-			'A', pigBits,
-			'B', geneEgg,
-		});
-					
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 91), new Object[] {
-			"AAA","ABA","AAA",
-			'A', sheepBits,
-			'B', geneEgg,
-		});
-					
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 50), new Object[] {
-			"AAA","ABA","AAA",
-			'A', creeperBits,
-			'B', geneEgg,
-		});
-					
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 54), new Object[] {
-			"AAA","ABA","AAA",
-			'A', zombieBits,
-			'B', geneEgg,
-		});
-						
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 51), new Object[] {
-			"AAA","ABA","AAA",
-			'A', skeletonBits,
-			'B', geneEgg,
-		});
-						
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 52), new Object[] {
-			"AAA","ABA","AAA",
-			'A', spiderBits,
-			'B', geneEgg,
-		});
-									
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 95), new Object[] {
-			"AAA","ABA","AAA",
-			'A', wolfBits,
-			'B', geneEgg,
-		});
-					
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 58), new Object[] {
-			"AAA","ABA","AAA",
-			'A', endermanBits,
-			'B', geneEgg,
-		});
-												
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 120), new Object[] {
-			"AAA","ABA","AAA",
-			'A', villagerBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 98), new Object[] {
-			"AAA","ABA","AAA",
-			'A', ocelotBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 100), new Object[] {
-			"AAA","ABA","AAA",
-			'A', horseBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 101), new Object[] {
-			"AAA","ABA","AAA",
-			'A', rabbitBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 57), new Object[] {
-			"AAA","ABA","AAA",
-			'A', zombiepigmenBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 61), new Object[] {
-			"AAA","ABA","AAA",
-			'A', blazeBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 66), new Object[] {
-			"AAA","ABA","AAA",
-			'A', witchBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 55), new Object[] {
-			"AAA","ABA","AAA",
-			'A', slimeBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 65), new Object[] {
-			"AAA","ABA","AAA",
-			'A', batBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 94), new Object[] {
-			"AAA","ABA","AAA",
-			'A', squidBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 59), new Object[] {
-			"AAA","ABA","AAA",
-			'A', cavespiderBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 56), new Object[] {
-			"AAA","ABA","AAA",
-			'A', ghastBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 60), new Object[] {
-			"AAA","ABA","AAA",
-			'A', silverfishBits, 
-			'B', geneEgg,
-		});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 62), new Object[] {
-				"AAA","ABA","AAA",
-				'A', magmacubeBits, 
-				'B', geneEgg,
-			});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 67), new Object[] {
-				"AAA","ABA","AAA",
-				'A', endermiteBits, 
-				'B', geneEgg,
-			});
-		
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 68), new Object[] {
-				"AAA","ABA","AAA",
-				'A', guardianBits, 
-				'B', geneEgg,
-			});
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 69), new Object[] {
-				"AAA","ABA","AAA",
-				'A', shulkerBits, 
-				'B', geneEgg,
-			});
-		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 102), new Object[] {
-				"AAA","ABA","AAA",
-				'A', polarbearOre, 
-				'B', geneEgg,
-			});
-		
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 4), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', elderguardianOre, 
-//				'B', geneEgg,
-//			});
-//			
-//			
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 5), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', witherskeletonOre, 
-//				'B', geneEgg,
-//			});
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 23), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', huskOre, 
-//				'B', geneEgg,
-//			});
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 6), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', strayOre, 
-//				'B', geneEgg,
-//			});
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 32), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', muleOre, 
-//				'B', geneEgg,
-//			});
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 31), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', donkeyOre, 
-//				'B', geneEgg,
-//			});
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 28), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', skeletonhorseOre, 
-//				'B', geneEgg,
-//			});
-//		GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 29), new Object[] {
-//				"AAA","ABA","AAA",
-//				'A', zombiehorseOre, 
-//				'B', geneEgg,
-//			});
-
-		
-		GameRegistry.addSmelting(chickenOre, new ItemStack(chickenBits, 3), 5.00F);
-		GameRegistry.addSmelting(cowOre, new ItemStack(cowBits, 3), 5.00F);
-		GameRegistry.addSmelting(mooshroomOre, new ItemStack(mooshroomBits, 3), 5.00F);
-		GameRegistry.addSmelting(wolfOre, new ItemStack(wolfBits, 3), 5.00F);
-		GameRegistry.addSmelting(pigOre, new ItemStack(pigBits, 3), 5.00F);
-		GameRegistry.addSmelting(sheepOre, new ItemStack(sheepBits, 3), 5.00F);
-		GameRegistry.addSmelting(creeperOre, new ItemStack(creeperBits, 3), 5.00F);
-		GameRegistry.addSmelting(zombieOre, new ItemStack(zombieBits, 3), 5.00F);
-		GameRegistry.addSmelting(skeletonOre, new ItemStack(skeletonBits, 3), 5.00F);
-		GameRegistry.addSmelting(spiderOre, new ItemStack(spiderBits, 3), 5.00F);
-		GameRegistry.addSmelting(endermanOre, new ItemStack(endermanBits, 3), 5.00F);
-		GameRegistry.addSmelting(villagerOre, new ItemStack(villagerBits, 3), 5.00F); 
-		GameRegistry.addSmelting(ocelotOre, new ItemStack(ocelotBits, 3), 5.00F);
-		GameRegistry.addSmelting(horseOre, new ItemStack(horseBits, 3), 5.00F);
-		GameRegistry.addSmelting(rabbitOre, new ItemStack(rabbitBits, 3), 5.00F);
-		GameRegistry.addSmelting(zombiepigmenOre, new ItemStack(zombiepigmenBits, 3), 5.00F);
-		GameRegistry.addSmelting(blazeOre, new ItemStack(blazeBits, 3), 5.00F);
-		GameRegistry.addSmelting(witchOre, new ItemStack(witchBits, 3), 5.00F);
-		GameRegistry.addSmelting(slimeOre, new ItemStack(slimeBits, 3), 5.00F);
-		GameRegistry.addSmelting(magmacubeOre, new ItemStack(magmacubeBits, 3), 5.00F);
-		GameRegistry.addSmelting(batOre, new ItemStack(batBits, 3), 5.00F);
-		GameRegistry.addSmelting(squidOre, new ItemStack(squidBits, 3), 5.00F);
-		GameRegistry.addSmelting(cavespiderOre, new ItemStack(cavespiderBits, 3), 5.00F);
-		GameRegistry.addSmelting(ghastOre, new ItemStack(ghastBits, 3), 5.00F);
-		GameRegistry.addSmelting(silverfishOre, new ItemStack(silverfishBits, 3), 5.00F);
-		GameRegistry.addSmelting(endermiteOre, new ItemStack(endermiteBits, 3), 5.00F);
-		GameRegistry.addSmelting(guardianOre, new ItemStack(guardianBits, 3), 5.00F);
-		GameRegistry.addSmelting(elderguardianOre, new ItemStack(elderguardianBits, 3), 5.00F);
-		GameRegistry.addSmelting(shulkerOre, new ItemStack(shulkerBits, 3), 5.00F);
-		GameRegistry.addSmelting(polarbearOre, new ItemStack(polarbearBits, 3), 5.00F);
-//		GameRegistry.addSmelting(witherskeletonOre, new ItemStack(witherskeletonBits, 3), 5.00F);
-//		GameRegistry.addSmelting(huskOre, new ItemStack(huskBits, 3), 5.00F);
-//		GameRegistry.addSmelting(strayOre, new ItemStack(strayBits, 3), 5.00F);
-//		GameRegistry.addSmelting(muleOre, new ItemStack(muleBits, 3), 5.00F);
-//		GameRegistry.addSmelting(donkeyOre, new ItemStack(donkeyBits, 3), 5.00F);
-//		GameRegistry.addSmelting(skeletonhorseOre, new ItemStack(skeletonhorseBits, 3), 5.00F);
-//		GameRegistry.addSmelting(zombiehorseOre, new ItemStack(zombiehorseBits, 3), 5.00F);
-		
-		GameRegistry.addSmelting(bushEgg, new ItemStack(geneEgg), 3.50F);
-		
-	}
-
-	public static void initItems() {
-		chickenBits = new ChickenBits();
+	    
+	    
+	    chickenBits = new ChickenBits();
 		cowBits = new CowBits();
 		mooshroomBits = new MooshroomBits();
 		pigBits = new PigBits();
@@ -682,69 +325,546 @@ public class Registry {
 		capMush = new CapMush();	   
 		stemMush = new StemMush();
 		mushroomCompound = new MushroomCompound();
- 
+	}
+	
+	public static void register() {
+		registerBlock(batOre);
+		registerBlock(blazeOre);
+		registerBlock(cavespiderOre);
+		registerBlock(chickenOre);
+		registerBlock(cowOre);
+		registerBlock(creeperOre);
+		registerBlock(endermanOre);
+		registerBlock(ghastOre);
+		registerBlock(horseOre);
+		registerBlock(magmacubeOre);
+		registerBlock(mooshroomOre);
+		registerBlock(ocelotOre);
+		registerBlock(pigOre);
+		registerBlock(rabbitOre);
+		registerBlock(sheepOre);
+		registerBlock(silverfishOre);
+		registerBlock(skeletonOre);
+		registerBlock(slimeOre);
+		registerBlock(spiderOre);
+		registerBlock(squidOre);
+		registerBlock(villagerOre);
+		registerBlock(witchOre);
+		registerBlock(wolfOre);
+		registerBlock(zombieOre);
+		registerBlock(zombiepigmenOre);
+		registerBlock(endermiteOre);
+		registerBlock(guardianOre);
+		registerBlock(elderguardianOre);
+		registerBlock(shulkerOre);
+		registerBlock(polarbearOre);
+		registerBlock(witherskeletonOre);
+		registerBlock(huskOre);
+		registerBlock(strayOre);
+		registerBlock(donkeyOre);
+		registerBlock(muleOre);
+		registerBlock(skeletonhorseOre);
+		registerBlock(zombiehorseOre);
+
+		registerBlock(dwarfLog);
+		registerBlock(dwarfLeaf);
+		registerBlock(dwarfSapling);
+
+		registerBlock(tabBlock);
+		
+		registerRender(batOre);
+		registerRender(blazeOre);
+		registerRender(cavespiderOre);
+		registerRender(chickenOre);
+		registerRender(cowOre);
+		registerRender(creeperOre);
+		registerRender(endermanOre);
+		registerRender(ghastOre);
+		registerRender(horseOre);
+		registerRender(magmacubeOre);
+		registerRender(mooshroomOre);
+		registerRender(ocelotOre);
+		registerRender(pigOre);
+		registerRender(rabbitOre);
+		registerRender(sheepOre);
+		registerRender(silverfishOre);
+		registerRender(skeletonOre);
+		registerRender(slimeOre);
+		registerRender(spiderOre);
+		registerRender(squidOre);
+		registerRender(villagerOre);
+		registerRender(witchOre);
+		registerRender(wolfOre);
+		registerRender(zombieOre);
+		registerRender(zombiepigmenOre);
+		registerRender(endermiteOre);
+		registerRender(guardianOre);
+		registerRender(elderguardianOre);
+		registerRender(shulkerOre);
+		registerRender(polarbearOre);
+		registerRender(witherskeletonOre);
+		registerRender(huskOre);
+		registerRender(strayOre);
+		registerRender(donkeyOre);
+		registerRender(muleOre);
+		registerRender(skeletonhorseOre);
+		registerRender(zombiehorseOre);
+
+		registerRender(dwarfLog);
+		registerRender(dwarfLeaf);
+		registerRender(dwarfSapling);
+
+		registerRender(tabBlock);
+		
+		
+		registerItem(batBits);
+		registerItem(blazeBits);
+		registerItem(bushEgg);
+		registerItem(bushMush);
+		registerItem(capMush);
+		registerItem(capSlice);
+		registerItem(cavespiderBits);
+		registerItem(chickenBits);
+		registerItem(cowBits);
+		registerItem(creeperBits);
+		registerItem(endermanBits);
+		registerItem(geneEgg);
+		registerItem(ghastBits);
+		registerItem(grassShreds);
+		registerItem(horseBits);
+		registerItem(magmacubeBits);
+		registerItem(mooshroomBits);
+		registerItem(mushroomCap);
+		registerItem(mushroomCompound);
+		registerItem(mushroomStem);
+		registerItem(mushyPulp);
+		registerItem(ocelotBits);
+		registerItem(pigBits);
+		registerItem(pulp);
+		registerItem(rabbitBits);
+		registerItem(refinedPulp);
+		registerItem(sheepBits);
+		registerItem(silverfishBits);
+		registerItem(skeletonBits);
+		registerItem(slimeBits);
+		registerItem(spiderBits);
+		registerItem(squidBits);
+		registerItem(stemMush);
+		registerItem(stemSlice);
+		registerItem(villagerBits);
+		registerItem(witchBits);
+		registerItem(wolfBits);
+		registerItem(woodPulp);
+		registerItem(zombieBits);
+		registerItem(zombiepigmenBits);
+		registerItem(endermiteBits);
+		registerItem(guardianBits);
+		registerItem(elderguardianBits);
+		registerItem(shulkerBits);
+		registerItem(polarbearBits);
+		registerItem(witherskeletonBits);
+		registerItem(huskBits);
+		registerItem(strayBits);
+		registerItem(muleBits);
+		registerItem(donkeyBits);
+		registerItem(skeletonhorseBits);
+		registerItem(zombiehorseBits);
+
 	}
 	
 	public static void renderItems() {
-		ItemModelMesher renderItem = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-		renderItem.register(batBits, 0, new ModelResourceLocation(modid + ":" + ((BatBits) batBits).getName(), "inventory"));
-		renderItem.register(blazeBits, 0, new ModelResourceLocation(modid + ":" + ((BlazeBits) blazeBits).getName(), "inventory"));
-		renderItem.register(bushEgg, 0, new ModelResourceLocation(modid + ":" + ((BushEgg) bushEgg).getName(), "inventory"));
-		renderItem.register(bushMush, 0, new ModelResourceLocation(modid + ":" + ((BushMush) bushMush).getName(), "inventory"));
-		renderItem.register(capMush, 0, new ModelResourceLocation(modid + ":" + ((CapMush) capMush).getName(), "inventory"));
-		renderItem.register(capSlice, 0, new ModelResourceLocation(modid + ":" + ((CapSlice) capSlice).getName(), "inventory"));
-		renderItem.register(cavespiderBits, 0, new ModelResourceLocation(modid + ":" + ((CaveSpiderBits) cavespiderBits).getName(), "inventory"));
-		renderItem.register(chickenBits, 0, new ModelResourceLocation(modid + ":" + ((ChickenBits) chickenBits).getName(), "inventory"));
-		renderItem.register(cowBits, 0, new ModelResourceLocation(modid + ":" + ((CowBits) cowBits).getName(), "inventory"));
-		renderItem.register(creeperBits, 0, new ModelResourceLocation(modid + ":" + ((CreeperBits) creeperBits).getName(), "inventory"));
-		renderItem.register(endermanBits, 0, new ModelResourceLocation(modid + ":" + ((EndermanBits) endermanBits).getName(), "inventory"));
-		renderItem.register(geneEgg, 0, new ModelResourceLocation(modid + ":" + ((GeneEgg) geneEgg).getName(), "inventory"));
-		renderItem.register(ghastBits, 0, new ModelResourceLocation(modid + ":" + ((GhastBits) ghastBits).getName(), "inventory"));
-		renderItem.register(grassShreds, 0, new ModelResourceLocation(modid + ":" + ((GrassShreds) grassShreds).getName(), "inventory"));
-		renderItem.register(horseBits, 0, new ModelResourceLocation(modid + ":" + ((HorseBits) horseBits).getName(), "inventory"));
-		renderItem.register(magmacubeBits, 0, new ModelResourceLocation(modid + ":" + ((MagmaCubeBits) magmacubeBits).getName(), "inventory"));
-		renderItem.register(mooshroomBits, 0, new ModelResourceLocation(modid + ":" + ((MooshroomBits) mooshroomBits).getName(), "inventory"));
-		renderItem.register(mushroomCap, 0, new ModelResourceLocation(modid + ":" + ((MushroomCap) mushroomCap).getName(), "inventory"));
-		renderItem.register(mushroomCompound, 0, new ModelResourceLocation(modid + ":" + ((MushroomCompound) mushroomCompound).getName(), "inventory"));
-		renderItem.register(mushroomStem, 0, new ModelResourceLocation(modid + ":" + ((MushroomStem) mushroomStem).getName(), "inventory"));
-		renderItem.register(mushyPulp, 0, new ModelResourceLocation(modid + ":" + ((MushyPulp) mushyPulp).getName(), "inventory"));
-		renderItem.register(ocelotBits, 0, new ModelResourceLocation(modid + ":" + ((OcelotBits) ocelotBits).getName(), "inventory"));
-		renderItem.register(pigBits, 0, new ModelResourceLocation(modid + ":" + ((PigBits) pigBits).getName(), "inventory"));
-		renderItem.register(pulp, 0, new ModelResourceLocation(modid + ":" + ((Pulp) pulp).getName(), "inventory"));
-		renderItem.register(rabbitBits, 0, new ModelResourceLocation(modid + ":" + ((RabbitBits) rabbitBits).getName(), "inventory"));
-		renderItem.register(refinedPulp, 0, new ModelResourceLocation(modid + ":" + ((RefinedPulp) refinedPulp).getName(), "inventory"));
-		renderItem.register(sheepBits, 0, new ModelResourceLocation(modid + ":" + ((SheepBits) sheepBits).getName(), "inventory"));
-		renderItem.register(silverfishBits, 0, new ModelResourceLocation(modid + ":" + ((SilverfishBits) silverfishBits).getName(), "inventory"));
-		renderItem.register(skeletonBits, 0, new ModelResourceLocation(modid + ":" + ((SkeletonBits) skeletonBits).getName(), "inventory"));
-		renderItem.register(slimeBits, 0, new ModelResourceLocation(modid + ":" + ((SlimeBits) slimeBits).getName(), "inventory"));
-		renderItem.register(spiderBits, 0, new ModelResourceLocation(modid + ":" + ((SpiderBits) spiderBits).getName(), "inventory"));
-		renderItem.register(squidBits, 0, new ModelResourceLocation(modid + ":" + ((SquidBits) squidBits).getName(), "inventory"));
-		renderItem.register(stemMush, 0, new ModelResourceLocation(modid + ":" + ((StemMush) stemMush).getName(), "inventory"));
-		renderItem.register(stemSlice, 0, new ModelResourceLocation(modid + ":" + ((StemSlice) stemSlice).getName(), "inventory"));
-		renderItem.register(villagerBits, 0, new ModelResourceLocation(modid + ":" + ((VillagerBits) villagerBits).getName(), "inventory"));
-		renderItem.register(witchBits, 0, new ModelResourceLocation(modid + ":" + ((WitchBits) witchBits).getName(), "inventory"));
-		renderItem.register(wolfBits, 0, new ModelResourceLocation(modid + ":" + ((WolfBits) wolfBits).getName(), "inventory"));
-		renderItem.register(woodPulp, 0, new ModelResourceLocation(modid + ":" + ((WoodPulp) woodPulp).getName(), "inventory"));
-		renderItem.register(zombieBits, 0, new ModelResourceLocation(modid + ":" + ((ZombieBits) zombieBits).getName(), "inventory"));
-		renderItem.register(zombiepigmenBits, 0, new ModelResourceLocation(modid + ":" + ((ZombiePigmenBits) zombiepigmenBits).getName(), "inventory"));
-		renderItem.register(endermiteBits, 0, new ModelResourceLocation(modid + ":" + ((EndermiteBits) endermiteBits).getName(), "inventory"));
-		renderItem.register(guardianBits, 0, new ModelResourceLocation(modid + ":" + ((GuardianBits) guardianBits).getName(), "inventory"));
-		renderItem.register(elderguardianBits, 0, new ModelResourceLocation(modid + ":" + ((ElderGuardianBits) elderguardianBits).getName(), "inventory"));
-		renderItem.register(shulkerBits, 0, new ModelResourceLocation(modid + ":" + ((ShulkerBits) shulkerBits).getName(), "inventory"));
-		renderItem.register(polarbearBits, 0, new ModelResourceLocation(modid + ":" + ((PolarBearBits) polarbearBits).getName(), "inventory"));
-		renderItem.register(witherskeletonBits, 0, new ModelResourceLocation(modid + ":" + ((WitherSkeletonBits) witherskeletonBits).getName(), "inventory"));
-		renderItem.register(huskBits, 0, new ModelResourceLocation(modid + ":" + ((HuskBits) huskBits).getName(), "inventory"));
-		renderItem.register(strayBits, 0, new ModelResourceLocation(modid + ":" + ((StrayBits) strayBits).getName(), "inventory"));
-		renderItem.register(muleBits, 0, new ModelResourceLocation(modid + ":" + ((MuleBits) muleBits).getName(), "inventory"));
-		renderItem.register(donkeyBits, 0, new ModelResourceLocation(modid + ":" + ((DonkeyBits) donkeyBits).getName(), "inventory"));
-		renderItem.register(skeletonhorseBits, 0, new ModelResourceLocation(modid + ":" + ((SkeletonHorseBits) skeletonhorseBits).getName(), "inventory"));
-		renderItem.register(zombiehorseBits, 0, new ModelResourceLocation(modid + ":" + ((ZombieHorseBits) zombiehorseBits).getName(), "inventory"));
+		
+		registerRender(batBits);
+		registerRender(blazeBits);
+		registerRender(bushEgg);
+		registerRender(bushMush);
+		registerRender(capMush);
+		registerRender(capSlice);
+		registerRender(cavespiderBits);
+		registerRender(chickenBits);
+		registerRender(cowBits);
+		registerRender(creeperBits);
+		registerRender(endermanBits);
+		registerRender(geneEgg);
+		registerRender(ghastBits);
+		registerRender(grassShreds);
+		registerRender(horseBits);
+		registerRender(magmacubeBits);
+		registerRender(mooshroomBits);
+		registerRender(mushroomCap);
+		registerRender(mushroomCompound);
+		registerRender(mushroomStem);
+		registerRender(mushyPulp);
+		registerRender(ocelotBits);
+		registerRender(pigBits);
+		registerRender(pulp);
+		registerRender(rabbitBits);
+		registerRender(refinedPulp);
+		registerRender(sheepBits);
+		registerRender(silverfishBits);
+		registerRender(skeletonBits);
+		registerRender(slimeBits);
+		registerRender(spiderBits);
+		registerRender(squidBits);
+		registerRender(stemMush);
+		registerRender(stemSlice);
+		registerRender(villagerBits);
+		registerRender(witchBits);
+		registerRender(wolfBits);
+		registerRender(woodPulp);
+		registerRender(zombieBits);
+		registerRender(zombiepigmenBits);
+		registerRender(endermiteBits);
+		registerRender(guardianBits);
+		registerRender(elderguardianBits);
+		registerRender(shulkerBits);
+		registerRender(polarbearBits);
+		registerRender(witherskeletonBits);
+		registerRender(huskBits);
+		registerRender(strayBits);
+		registerRender(muleBits);
+		registerRender(donkeyBits);
+		registerRender(skeletonhorseBits);
+		registerRender(zombiehorseBits);
 	}
+	
+	public static void registerRecipes() {//method thats dealing the recipes 
+		
+		//shapeless
+			
+			GameRegistry.addShapelessRecipe(new ItemStack(bushMush), new ItemStack(grassShreds, 2));
+			GameRegistry.addShapelessRecipe(new ItemStack(pulp), new ItemStack(mushyPulp));
+			GameRegistry.addShapelessRecipe(new ItemStack(woodPulp), new ItemStack(dwarfLog));
+			GameRegistry.addShapelessRecipe(new ItemStack(refinedPulp), new ItemStack(woodPulp, 3));
+			GameRegistry.addShapelessRecipe(new ItemStack(capSlice, 2), new ItemStack(mushroomCap));
+			GameRegistry.addShapelessRecipe(new ItemStack(stemSlice, 2), new ItemStack(mushroomStem));
+		
+		GameRegistry.addRecipe(new ItemStack(bushEgg), new Object[] {
+				"BAB","DBE","CCC",
+				'A', Items.EGG,
+				'B', bushMush,
+				'C', refinedPulp,
+				'D', capMush,
+				'E', stemMush,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(mushroomCompound), new Object[] {
+				"AB ","BA ","   ",
+				'A', Blocks.RED_MUSHROOM,
+				'B', Blocks.BROWN_MUSHROOM,
+				
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(capMush), new Object[] {
+				"AA ","AA ","   ",
+				'A', capSlice,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(stemMush), new Object[] {
+				"AA ","AA ","   ",
+				'A', stemSlice,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(refinedPulp), new Object[] {
+				"AA ","AA ","   ",
+				'A', woodPulp,
+			
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(dwarfSapling), new Object[] {
+				" A ","AAA"," A ",
+				'A', pulp,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 93), new Object[] {
+				"AAA","ABA","AAA",
+				'A', chickenBits,
+				'B', geneEgg,
+				
+			});
+		
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 92), new Object[] {
+				"AAA","ABA","AAA",
+				'A', cowBits,
+				'B', geneEgg,
+			});
+							
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 96), new Object[] {
+				"AAA","ABA","AAA",
+				'A', mooshroomBits,
+				'B', geneEgg,
+				
+			});
+				
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 90), new Object[] {
+				"AAA","ABA","AAA",
+				'A', pigBits,
+				'B', geneEgg,
+			});
+						
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 91), new Object[] {
+				"AAA","ABA","AAA",
+				'A', sheepBits,
+				'B', geneEgg,
+			});
+						
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 50), new Object[] {
+				"AAA","ABA","AAA",
+				'A', creeperBits,
+				'B', geneEgg,
+			});
+						
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 54), new Object[] {
+				"AAA","ABA","AAA",
+				'A', zombieBits,
+				'B', geneEgg,
+			});
+							
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 51), new Object[] {
+				"AAA","ABA","AAA",
+				'A', skeletonBits,
+				'B', geneEgg,
+			});
+							
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 52), new Object[] {
+				"AAA","ABA","AAA",
+				'A', spiderBits,
+				'B', geneEgg,
+			});
+										
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 95), new Object[] {
+				"AAA","ABA","AAA",
+				'A', wolfBits,
+				'B', geneEgg,
+			});
+						
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 58), new Object[] {
+				"AAA","ABA","AAA",
+				'A', endermanBits,
+				'B', geneEgg,
+			});
+													
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 120), new Object[] {
+				"AAA","ABA","AAA",
+				'A', villagerBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 98), new Object[] {
+				"AAA","ABA","AAA",
+				'A', ocelotBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 100), new Object[] {
+				"AAA","ABA","AAA",
+				'A', horseBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 101), new Object[] {
+				"AAA","ABA","AAA",
+				'A', rabbitBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 57), new Object[] {
+				"AAA","ABA","AAA",
+				'A', zombiepigmenBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 61), new Object[] {
+				"AAA","ABA","AAA",
+				'A', blazeBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 66), new Object[] {
+				"AAA","ABA","AAA",
+				'A', witchBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 55), new Object[] {
+				"AAA","ABA","AAA",
+				'A', slimeBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 65), new Object[] {
+				"AAA","ABA","AAA",
+				'A', batBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 94), new Object[] {
+				"AAA","ABA","AAA",
+				'A', squidBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 59), new Object[] {
+				"AAA","ABA","AAA",
+				'A', cavespiderBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 56), new Object[] {
+				"AAA","ABA","AAA",
+				'A', ghastBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 60), new Object[] {
+				"AAA","ABA","AAA",
+				'A', silverfishBits, 
+				'B', geneEgg,
+			});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 62), new Object[] {
+					"AAA","ABA","AAA",
+					'A', magmacubeBits, 
+					'B', geneEgg,
+				});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 67), new Object[] {
+					"AAA","ABA","AAA",
+					'A', endermiteBits, 
+					'B', geneEgg,
+				});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 68), new Object[] {
+					"AAA","ABA","AAA",
+					'A', guardianBits, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 69), new Object[] {
+					"AAA","ABA","AAA",
+					'A', shulkerBits, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 102), new Object[] {
+					"AAA","ABA","AAA",
+					'A', polarbearOre, 
+					'B', geneEgg,
+				});
+			
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 4), new Object[] {
+					"AAA","ABA","AAA",
+					'A', elderguardianOre, 
+					'B', geneEgg,
+				});
+				
+				
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 5), new Object[] {
+					"AAA","ABA","AAA",
+					'A', witherskeletonOre, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 23), new Object[] {
+					"AAA","ABA","AAA",
+					'A', huskOre, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 6), new Object[] {
+					"AAA","ABA","AAA",
+					'A', strayOre, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 32), new Object[] {
+					"AAA","ABA","AAA",
+					'A', muleOre, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 31), new Object[] {
+					"AAA","ABA","AAA",
+					'A', donkeyOre, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 28), new Object[] {
+					"AAA","ABA","AAA",
+					'A', skeletonhorseOre, 
+					'B', geneEgg,
+				});
+			GameRegistry.addRecipe(new ItemStack(Items.SPAWN_EGG, 1, 29), new Object[] {
+					"AAA","ABA","AAA",
+					'A', zombiehorseOre, 
+					'B', geneEgg,
+				});
 
+			
+			GameRegistry.addSmelting(chickenOre, new ItemStack(chickenBits, 3), 5.00F);
+			GameRegistry.addSmelting(cowOre, new ItemStack(cowBits, 3), 5.00F);
+			GameRegistry.addSmelting(mooshroomOre, new ItemStack(mooshroomBits, 3), 5.00F);
+			GameRegistry.addSmelting(wolfOre, new ItemStack(wolfBits, 3), 5.00F);
+			GameRegistry.addSmelting(pigOre, new ItemStack(pigBits, 3), 5.00F);
+			GameRegistry.addSmelting(sheepOre, new ItemStack(sheepBits, 3), 5.00F);
+			GameRegistry.addSmelting(creeperOre, new ItemStack(creeperBits, 3), 5.00F);
+			GameRegistry.addSmelting(zombieOre, new ItemStack(zombieBits, 3), 5.00F);
+			GameRegistry.addSmelting(skeletonOre, new ItemStack(skeletonBits, 3), 5.00F);
+			GameRegistry.addSmelting(spiderOre, new ItemStack(spiderBits, 3), 5.00F);
+			GameRegistry.addSmelting(endermanOre, new ItemStack(endermanBits, 3), 5.00F);
+			GameRegistry.addSmelting(villagerOre, new ItemStack(villagerBits, 3), 5.00F); 
+			GameRegistry.addSmelting(ocelotOre, new ItemStack(ocelotBits, 3), 5.00F);
+			GameRegistry.addSmelting(horseOre, new ItemStack(horseBits, 3), 5.00F);
+			GameRegistry.addSmelting(rabbitOre, new ItemStack(rabbitBits, 3), 5.00F);
+			GameRegistry.addSmelting(zombiepigmenOre, new ItemStack(zombiepigmenBits, 3), 5.00F);
+			GameRegistry.addSmelting(blazeOre, new ItemStack(blazeBits, 3), 5.00F);
+			GameRegistry.addSmelting(witchOre, new ItemStack(witchBits, 3), 5.00F);
+			GameRegistry.addSmelting(slimeOre, new ItemStack(slimeBits, 3), 5.00F);
+			GameRegistry.addSmelting(magmacubeOre, new ItemStack(magmacubeBits, 3), 5.00F);
+			GameRegistry.addSmelting(batOre, new ItemStack(batBits, 3), 5.00F);
+			GameRegistry.addSmelting(squidOre, new ItemStack(squidBits, 3), 5.00F);
+			GameRegistry.addSmelting(cavespiderOre, new ItemStack(cavespiderBits, 3), 5.00F);
+			GameRegistry.addSmelting(ghastOre, new ItemStack(ghastBits, 3), 5.00F);
+			GameRegistry.addSmelting(silverfishOre, new ItemStack(silverfishBits, 3), 5.00F);
+			GameRegistry.addSmelting(endermiteOre, new ItemStack(endermiteBits, 3), 5.00F);
+			GameRegistry.addSmelting(guardianOre, new ItemStack(guardianBits, 3), 5.00F);
+			GameRegistry.addSmelting(elderguardianOre, new ItemStack(elderguardianBits, 3), 5.00F);
+			GameRegistry.addSmelting(shulkerOre, new ItemStack(shulkerBits, 3), 5.00F);
+			GameRegistry.addSmelting(polarbearOre, new ItemStack(polarbearBits, 3), 5.00F);
+			GameRegistry.addSmelting(witherskeletonOre, new ItemStack(witherskeletonBits, 3), 5.00F);
+			GameRegistry.addSmelting(huskOre, new ItemStack(huskBits, 3), 5.00F);
+			GameRegistry.addSmelting(strayOre, new ItemStack(strayBits, 3), 5.00F);
+			GameRegistry.addSmelting(muleOre, new ItemStack(muleBits, 3), 5.00F);
+			GameRegistry.addSmelting(donkeyOre, new ItemStack(donkeyBits, 3), 5.00F);
+			GameRegistry.addSmelting(skeletonhorseOre, new ItemStack(skeletonhorseBits, 3), 5.00F);
+			GameRegistry.addSmelting(zombiehorseOre, new ItemStack(zombiehorseBits, 3), 5.00F);
+			
+			GameRegistry.addSmelting(bushEgg, new ItemStack(geneEgg), 3.50F);
+			
+		}
+	
+	public static void registerSeeds() {
+		MinecraftForge.addGrassSeed(new ItemStack(grassShreds), 7);
+		MinecraftForge.addGrassSeed(new ItemStack(mushyPulp), 6);
+	}
+	
 	public static void registerSounds() {
 		mushroomLive = registerSound("mushroomLive");
 		mushroomHurt = registerSound("mushroomHurt");
 		mushroomDie = registerSound("mushroomDie");
+	}
+	
+	private static void registerBlock(Block block) {
+		GameRegistry.register(block);
+		ItemBlock item = new ItemBlock(block);
+		item.setRegistryName(block.getRegistryName()); 
+		GameRegistry.register(item);
+	}
+	
+	private static void registerItem(Item item) {
+		GameRegistry.register(item);
+	}
+	
+	public static void registerRender(Block block) {
+		Item item = Item.getItemFromBlock(block);
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(modid + ":" + block.getRegistryName(), "inventory"));
+	}
+	
+	public static void registerRender(Item item) {
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(modid + ":" + item.getRegistryName(), "inventory"));
 	}
 	
 	private static SoundEvent registerSound(String soundName) {
@@ -752,8 +872,4 @@ public class Registry {
 		return GameRegistry.register(new SoundEvent(id).setRegistryName(id));
 	}
 	
-	public static void registerSeeds() {
-		MinecraftForge.addGrassSeed(new ItemStack(grassShreds), 7);
-		MinecraftForge.addGrassSeed(new ItemStack(mushyPulp), 6);
-	}
 }

@@ -1,8 +1,9 @@
 package com.MobBlockMod.tabs;
 
-import com.MobBlockMod.Registry;
+import com.MobBlockMod.init.ModBlocks;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -13,10 +14,9 @@ public class MobBlockModTab extends CreativeTabs {
 	}
 	
 	@Override
-	public Item getTabIconItem() 
+	public ItemStack getTabIconItem() 
 	{
-		ItemStack itemStack = new ItemStack(Registry.tabBlock);
-		return itemStack.getItem();
+		return new ItemStack(Item.getItemFromBlock(ModBlocks.tabBlock));
 	}
 
 }
