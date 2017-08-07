@@ -1,3 +1,8 @@
+0.2-0.9.8
+*********************************
+BETA
+Mechanic development
+*********************************
 1.0 - 2.4
 *********************************
 DEPRECATED
@@ -96,6 +101,7 @@ Update to 1.9.4
 *********************************
 Fixed leaf and log flammability
 Updated MM AI
+Added MM sounds - ambient, hurt, die
 Added new IAttributes
 *********************************
 2.6.3
@@ -132,18 +138,16 @@ Fixed 'Leaf Pillars' XP
 2.7.6
 *********************************
 Update to 1.12
-Moved to json system for recipes
+Moved to json registration system for recipes
 Fixed solid saplings - again
 Wrote Java script to write json files - im lazy ._.
 *********************************
-
-PLANNED
-Updated to 1.10.2
-Update to 1.11
-
-FUTURE
+2.8
 *********************************
-Updates for 1.10, 1.11, 1.12, etc,
-New mobs
-MM colonies
+Added missing 1.11 stuff
+Added parrot garbage
+Screwy mechanic fixes
+Removed MM ambient sounds
+*********************************
+
 *********************************

@@ -134,7 +134,7 @@ public class EntityMushroomMob extends EntityTameable{
     }
 
 	protected SoundEvent getAmbientSound() {
-		return ModSounds.mushroomLive;
+		return null;
 	}
 	protected SoundEvent getHurtSound() {
 		return ModSounds.mushroomHurt;

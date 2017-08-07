@@ -14,12 +14,14 @@ import com.MobBlockMod.items.DonkeyBits;
 import com.MobBlockMod.items.ElderGuardianBits;
 import com.MobBlockMod.items.EndermanBits;
 import com.MobBlockMod.items.EndermiteBits;
+import com.MobBlockMod.items.EvokerBits;
 import com.MobBlockMod.items.GeneEgg;
 import com.MobBlockMod.items.GhastBits;
 import com.MobBlockMod.items.GrassShreds;
 import com.MobBlockMod.items.GuardianBits;
 import com.MobBlockMod.items.HorseBits;
 import com.MobBlockMod.items.HuskBits;
+import com.MobBlockMod.items.LlamaBits;
 import com.MobBlockMod.items.MagmaCubeBits;
 import com.MobBlockMod.items.MooshroomBits;
 import com.MobBlockMod.items.MuleBits;
@@ -28,6 +30,7 @@ import com.MobBlockMod.items.MushroomCompound;
 import com.MobBlockMod.items.MushroomStem;
 import com.MobBlockMod.items.MushyPulp;
 import com.MobBlockMod.items.OcelotBits;
+import com.MobBlockMod.items.ParrotBits;
 import com.MobBlockMod.items.PigBits;
 import com.MobBlockMod.items.PolarBearBits;
 import com.MobBlockMod.items.Pulp;
@@ -44,7 +47,9 @@ import com.MobBlockMod.items.SquidBits;
 import com.MobBlockMod.items.StemMush;
 import com.MobBlockMod.items.StemSlice;
 import com.MobBlockMod.items.StrayBits;
+import com.MobBlockMod.items.VexBits;
 import com.MobBlockMod.items.VillagerBits;
+import com.MobBlockMod.items.VindicatorBits;
 import com.MobBlockMod.items.WitchBits;
 import com.MobBlockMod.items.WitherSkeletonBits;
 import com.MobBlockMod.items.WolfBits;
@@ -52,6 +57,7 @@ import com.MobBlockMod.items.WoodPulp;
 import com.MobBlockMod.items.ZombieBits;
 import com.MobBlockMod.items.ZombieHorseBits;
 import com.MobBlockMod.items.ZombiePigmenBits;
+import com.MobBlockMod.items.ZombieVillagerBits;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -103,18 +109,20 @@ public class ModItems
 	public static final Item donkeyBits = new DonkeyBits();
 	public static final Item skeletonhorseBits = new SkeletonHorseBits();
 	public static final Item zombiehorseBits = new ZombieHorseBits();
+	public static final Item zombievillagerBits = new ZombieVillagerBits();
+	public static final Item evokerBits = new EvokerBits();
+	public static final Item llamaBits = new LlamaBits();
+	public static final Item vexBits = new VexBits();
+	public static final Item vindicatorBits = new VindicatorBits();
+	public static final Item parrotBits = new ParrotBits();
 
 	public static final Item bushMush = new BushMush();
-
-	public static final Item grassShreds = new GrassShreds(); 
-
+	public static final Item grassShreds = new GrassShreds();
 	public static final Item bushEgg = new BushEgg();
 	public static final Item geneEgg = new GeneEgg();	    
 	public static final Item woodPulp = new WoodPulp();	   
 	public static final Item refinedPulp = new RefinedPulp();
-	   
-	public static final Item mushyPulp = new MushyPulp();	
-
+	public static final Item mushyPulp = new MushyPulp();
 	public static final Item pulp = new Pulp();	    
 	public static final Item mushroomCap = new MushroomCap();
 	public static final Item mushroomStem = new MushroomStem();	    
@@ -165,6 +173,12 @@ public class ModItems
 		event.getRegistry().register(muleBits);
 		event.getRegistry().register(skeletonhorseBits);
 		event.getRegistry().register(zombiehorseBits);
+		event.getRegistry().register(zombievillagerBits);
+		event.getRegistry().register(evokerBits);
+		event.getRegistry().register(llamaBits);
+		event.getRegistry().register(vexBits);
+		event.getRegistry().register(vindicatorBits);
+		event.getRegistry().register(parrotBits);
 		
 		event.getRegistry().register(bushMush);
 		event.getRegistry().register(grassShreds);
@@ -224,6 +238,12 @@ public class ModItems
 		ModelLoader.setCustomModelResourceLocation(muleBits, 0, new ModelResourceLocation(muleBits.getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(skeletonhorseBits, 0, new ModelResourceLocation(skeletonhorseBits.getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(zombiehorseBits, 0, new ModelResourceLocation(zombiehorseBits.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(zombievillagerBits, 0, new ModelResourceLocation(zombievillagerBits.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(evokerBits, 0, new ModelResourceLocation(evokerBits.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(llamaBits, 0, new ModelResourceLocation(llamaBits.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(vexBits, 0, new ModelResourceLocation(vexBits.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(vindicatorBits, 0, new ModelResourceLocation(vindicatorBits.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(parrotBits, 0, new ModelResourceLocation(parrotBits.getRegistryName(), "inventory"));
 		
 		ModelLoader.setCustomModelResourceLocation(bushMush, 0, new ModelResourceLocation(bushMush.getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(grassShreds, 0, new ModelResourceLocation(grassShreds.getRegistryName(), "inventory"));

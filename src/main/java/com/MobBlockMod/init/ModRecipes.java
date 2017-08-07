@@ -49,6 +49,12 @@ public class ModRecipes {
 		GameRegistry.addSmelting(ModBlocks.donkeyOre, new ItemStack(ModItems.donkeyBits, 3), 5.00F);
 		GameRegistry.addSmelting(ModBlocks.skeletonhorseOre, new ItemStack(ModItems.skeletonhorseBits, 3), 5.00F);
 		GameRegistry.addSmelting(ModBlocks.zombiehorseOre, new ItemStack(ModItems.zombiehorseBits, 3), 5.00F);
+		GameRegistry.addSmelting(ModBlocks.zombievillagerOre, new ItemStack(ModItems.zombievillagerBits, 3), 5.00F);
+		GameRegistry.addSmelting(ModBlocks.evokerOre, new ItemStack(ModItems.evokerBits, 3), 5.00F);
+		GameRegistry.addSmelting(ModBlocks.llamaOre, new ItemStack(ModItems.llamaBits, 3), 5.00F);
+		GameRegistry.addSmelting(ModBlocks.vexOre, new ItemStack(ModItems.vexBits, 3), 5.00F);
+		GameRegistry.addSmelting(ModBlocks.vindicatorOre, new ItemStack(ModItems.vindicatorBits, 3), 5.00F);
+		GameRegistry.addSmelting(ModBlocks.parrotOre, new ItemStack(ModItems.parrotBits, 3), 5.00F);
 
 		GameRegistry.addSmelting(ModItems.bushEgg, new ItemStack(ModItems.geneEgg), 3.50F);
 

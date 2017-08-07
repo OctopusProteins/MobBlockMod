@@ -10,14 +10,17 @@ import com.MobBlockMod.blocks.DonkeyOre;
 import com.MobBlockMod.blocks.ElderGuardianOre;
 import com.MobBlockMod.blocks.EndermanOre;
 import com.MobBlockMod.blocks.EndermiteOre;
+import com.MobBlockMod.blocks.EvokerOre;
 import com.MobBlockMod.blocks.GhastOre;
 import com.MobBlockMod.blocks.GuardianOre;
 import com.MobBlockMod.blocks.HorseOre;
 import com.MobBlockMod.blocks.HuskOre;
+import com.MobBlockMod.blocks.LlamaOre;
 import com.MobBlockMod.blocks.MagmaCubeOre;
 import com.MobBlockMod.blocks.MooshroomOre;
 import com.MobBlockMod.blocks.MuleOre;
 import com.MobBlockMod.blocks.OcelotOre;
+import com.MobBlockMod.blocks.ParrotOre;
 import com.MobBlockMod.blocks.PigOre;
 import com.MobBlockMod.blocks.PolarBearOre;
 import com.MobBlockMod.blocks.RabbitOre;
@@ -31,13 +34,16 @@ import com.MobBlockMod.blocks.SpiderOre;
 import com.MobBlockMod.blocks.SquidOre;
 import com.MobBlockMod.blocks.StrayOre;
 import com.MobBlockMod.blocks.TabBlock;
+import com.MobBlockMod.blocks.VexOre;
 import com.MobBlockMod.blocks.VillagerOre;
+import com.MobBlockMod.blocks.VindicatorOre;
 import com.MobBlockMod.blocks.WitchOre;
 import com.MobBlockMod.blocks.WitherSkeletonOre;
 import com.MobBlockMod.blocks.WolfOre;
 import com.MobBlockMod.blocks.ZombieHorseOre;
 import com.MobBlockMod.blocks.ZombieOre;
 import com.MobBlockMod.blocks.ZombiePigmenOre;
+import com.MobBlockMod.blocks.ZombieVillagerOre;
 import com.MobBlockMod.tree.DwarfLeaf;
 import com.MobBlockMod.tree.DwarfLog;
 import com.MobBlockMod.tree.DwarfSapling;
@@ -94,6 +100,12 @@ public class ModBlocks
 	public static final Block muleOre = new MuleOre();
 	public static final Block skeletonhorseOre = new SkeletonHorseOre();
 	public static final Block zombiehorseOre = new ZombieHorseOre();
+	public static final Block zombievillagerOre = new ZombieVillagerOre();
+	public static final Block evokerOre = new EvokerOre();
+	public static final Block llamaOre = new LlamaOre();
+	public static final Block vexOre = new VexOre();
+	public static final Block vindicatorOre = new VindicatorOre();
+	public static final Block parrotOre = new ParrotOre();
 	
 	public static final Block dwarfLog = new DwarfLog();
 	public static final Block dwarfLeaf = new DwarfLeaf();
@@ -141,6 +153,12 @@ public class ModBlocks
 		event.getRegistry().register(muleOre);
 		event.getRegistry().register(skeletonhorseOre);
 		event.getRegistry().register(zombiehorseOre);
+		event.getRegistry().register(zombievillagerOre);
+		event.getRegistry().register(evokerOre);
+		event.getRegistry().register(llamaOre);
+		event.getRegistry().register(vexOre);
+		event.getRegistry().register(vindicatorOre);
+		event.getRegistry().register(parrotOre);
 		
 		event.getRegistry().register(dwarfLog);
 		event.getRegistry().register(dwarfLeaf);
@@ -190,6 +208,12 @@ public class ModBlocks
 		event.getRegistry().register(new ItemBlock(skeletonhorseOre).setRegistryName(skeletonhorseOre.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(zombiehorseOre).setRegistryName(zombiehorseOre.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(tabBlock).setRegistryName(tabBlock.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(zombievillagerOre).setRegistryName(zombievillagerOre.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(evokerOre).setRegistryName(evokerOre.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(llamaOre).setRegistryName(llamaOre.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(vexOre).setRegistryName(vexOre.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(vindicatorOre).setRegistryName(vindicatorOre.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(parrotOre).setRegistryName(parrotOre.getRegistryName()));
 		
 		event.getRegistry().register(new ItemBlock(dwarfLog).setRegistryName(dwarfLog.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(dwarfLeaf).setRegistryName(dwarfLeaf.getRegistryName()));
@@ -238,6 +262,13 @@ public class ModBlocks
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(muleOre), 0, new ModelResourceLocation(Item.getItemFromBlock(muleOre).getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(skeletonhorseOre), 0, new ModelResourceLocation(Item.getItemFromBlock(skeletonhorseOre).getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(zombiehorseOre), 0, new ModelResourceLocation(Item.getItemFromBlock(zombiehorseOre).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(zombievillagerOre), 0, new ModelResourceLocation(Item.getItemFromBlock(zombievillagerOre).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(evokerOre), 0, new ModelResourceLocation(Item.getItemFromBlock(evokerOre).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(llamaOre), 0, new ModelResourceLocation(Item.getItemFromBlock(llamaOre).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(vexOre), 0, new ModelResourceLocation(Item.getItemFromBlock(vexOre).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(vindicatorOre), 0, new ModelResourceLocation(Item.getItemFromBlock(vindicatorOre).getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(parrotOre), 0, new ModelResourceLocation(Item.getItemFromBlock(parrotOre).getRegistryName(), "inventory"));
+		
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(tabBlock), 0, new ModelResourceLocation(Item.getItemFromBlock(tabBlock).getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(dwarfLeaf), 0, new ModelResourceLocation(Item.getItemFromBlock(dwarfLeaf).getRegistryName(), "inventory"));
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(dwarfLog), 0, new ModelResourceLocation(Item.getItemFromBlock(dwarfLog).getRegistryName(), "inventory"));
