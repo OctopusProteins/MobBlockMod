@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        "CCC",
+        " C "
+    ],
+    "key": {
+        "C": {
+            "item": "mobblockmod:pulp"
+        }
+    },
+    "result": {
+        "item": "mobblockmod:dwarfsapling"
+    }
+}

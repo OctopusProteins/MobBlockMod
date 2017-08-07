@@ -42,7 +42,13 @@ tile.muleOre.name=Mule Block
 tile.donkeyOre.name=Donkey Block
 tile.skeletonhorseOre.name=Skeleton Horse Block
 tile.zombiehorseOre.name=Zombie Horse Block
-
+//2.8
+tile.zombievillagerOre.name=Zombie Villager Block
+tile.evokerOre.name=Evoker Block
+tile.llamaOre.name=Llama Block
+tile.vexOre.name=Vex Block
+tile.vindicatorOre.name=Vindicator Block
+tile.parrotOre.name=Parrot Block
 
 //1.0
 item.chickenBits.name=Chicken Bits
@@ -87,7 +93,13 @@ item.muleBits.name=Mule Bits
 item.donkeyBits.name=Donkey Bits
 item.skeletonhorseBits.name=Skeleton Horse Bits
 item.zombiehorseBits.name=Zombie Horse Bits
-
+//2.8
+item.zombievillagerBits.name=Zombie Villager Bits
+item.evokerBits.name=Evoker Bits
+item.llamaBits.name=Llama Bits
+item.vexBits.name=Vex Bits
+item.vindicatorBits.name=Vindicator Bits
+item.parrotBits.name=Parrot Bits
 
 item.bushMush.name=Bush Mush
 item.grassShreds.name=Grass Shreds

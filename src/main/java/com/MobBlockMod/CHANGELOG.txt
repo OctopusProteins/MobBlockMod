@@ -1,3 +1,8 @@
+0.2-0.9.8
+*********************************
+BETA
+Mechanic development
+*********************************
 1.0 - 2.4
 *********************************
 DEPRECATED
@@ -96,6 +101,7 @@ Update to 1.9.4
 *********************************
 Fixed leaf and log flammability
 Updated MM AI
+Added MM sounds - ambient, hurt, die
 Added new IAttributes
 *********************************
 2.6.3
@@ -106,7 +112,7 @@ Update to 1.10
 *********************************
 Added stuff for polar bear
 Added stuff to support 1.11 update
-Removed @Dep tags
+Removed @Dep annotations
 Fixed unobtainable items
 *********************************
 2.6.7
@@ -119,6 +125,8 @@ Update to 1.11
 Added removed added items
 Reorganized classes again - ALOT
 MODID to lc
+Optimized for 1.12 update
+Moved to IForgeRegistry EventBus system for registration
 Props to @csb987 - Thank you!
 *********************************
 2.7.1
@@ -127,14 +135,19 @@ Update to 1.11.2
 Fixed lang issue
 Fixed 'Leaf Pillars' XP
 *********************************
-
-PLANNED
-Updated to 1.10.2
-Update to 1.11
-
-FUTURE
+2.7.6
 *********************************
-Updates for 1.10, 1.11, 1.12, etc,
-New mobs
-MM colonies
+Update to 1.12
+Moved to json registration system for recipes
+Fixed solid saplings - again
+Wrote Java script to write json files - im lazy ._.
+*********************************
+2.8
+*********************************
+Added missing 1.11 stuff
+Added parrot garbage
+Screwy mechanic fixes
+Removed MM ambient sounds
+*********************************
+
 *********************************

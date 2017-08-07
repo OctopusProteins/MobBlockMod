@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mobblockmod:stemslice",
+  "ingredients": [
+    {
+      "item": "mobblockmod:mushroomstem"
+    }
+  ],
+  "result": {
+    "item": "mobblockmod:stemslice",
+    "count": 2
+  }
+}
