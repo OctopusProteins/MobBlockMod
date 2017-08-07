@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mobblockmod:capslice",
+  "ingredients": [
+    {
+      "item": "mobblockmod:mushroomcap"
+    }
+  ],
+  "result": {
+    "item": "mobblockmod:capslice",
+    "count": 2
+  }
+}

@@ -106,7 +106,7 @@ Update to 1.10
 *********************************
 Added stuff for polar bear
 Added stuff to support 1.11 update
-Removed @Dep tags
+Removed @Dep annotations
 Fixed unobtainable items
 *********************************
 2.6.7
@@ -119,6 +119,8 @@ Update to 1.11
 Added removed added items
 Reorganized classes again - ALOT
 MODID to lc
+Optimized for 1.12 update
+Moved to IForgeRegistry EventBus system for registration
 Props to @csb987 - Thank you!
 *********************************
 2.7.1
@@ -126,6 +128,13 @@ Props to @csb987 - Thank you!
 Update to 1.11.2
 Fixed lang issue
 Fixed 'Leaf Pillars' XP
+*********************************
+2.7.6
+*********************************
+Update to 1.12
+Moved to json system for recipes
+Fixed solid saplings - again
+Wrote Java script to write json files - im lazy ._.
 *********************************
 
 PLANNED

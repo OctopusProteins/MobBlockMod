@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BEB",
+        "CBS",
+        "RRR"
+    ],
+    "key": {
+        "B": {
+            "item": "mobblockmod:bushmush"
+        },
+        "E": {
+            "item": "minecraft:egg"
+        },
+        "C": {
+            "item": "mobblockmod:capmush"
+        },
+        "S": {
+            "item": "mobblockmod:stemmush"
+        },
+        "R": {
+            "item": "mobblockmod:refinedpulp"
+        }
+    },
+    "result": {
+        "item": "mobblockmod:bushegg"
+    }
+}

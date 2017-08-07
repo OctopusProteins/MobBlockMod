@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "spawn_egg",
+    "pattern": [
+        "AAA",
+        "ACA",
+        "AAA"
+    ],
+    "key": {
+        "C": {
+            "item": "mobblockmod:geneegg"
+        },
+        "A": {
+            "item": 
+"mobblockmod:pigbits"
+       }
+    },
+    "result": {
+        "item": "minecraft:spawn_egg",
+        "nbt": {
+            "EntityTag": {
+                "id": 
+"pig"
+			}
+        }
+    }
+}

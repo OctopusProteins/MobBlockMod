@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mobblockmod:refinedpulp",
+  "ingredients": [
+    {
+      "item": "mobblockmod:woodpulp"
+    },
+    {
+      "item": "mobblockmod:woodpulp"
+    },
+    {
+      "item": "mobblockmod:woodpulp"
+    }
+  ],
+  "result": {
+    "item": "mobblockmod:refinedpulp"
+  }
+}

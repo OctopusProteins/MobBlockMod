@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mobblockmod:bushmush",
+  "ingredients": [
+    {
+      "item": "mobblockmod:grassshreds"
+    },
+    {
+      "item": "mobblockmod:grassshreds"
+    }
+  ],
+  "result": {
+    "item": "mobblockmod:bushmush",
+    "count": 1
+  }
+}
